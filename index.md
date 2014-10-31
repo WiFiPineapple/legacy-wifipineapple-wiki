@@ -1,4 +1,4 @@
-# Welcome to the official WiFi Pineapple Wiki!
+# ![](imgs/wiki_logo.png) Welcome to the official WiFi Pineapple Wiki! ![](imgs/wiki_logo.png)
 
 Welcome to the new wiki for the [WiFi Pineapple (official site)!](https://wifipineapple.com/) The current iteration of this wiki is geared towards the Mark 5 Revision of the WiFi Pineapple. In this wiki you can find guides and information for both the hardware and software. Please visit the [Legacy](legacy.md) section for FAQs and guides for older hardware. For information about infusions, [Infusions](infusions.md) is the place.
 
