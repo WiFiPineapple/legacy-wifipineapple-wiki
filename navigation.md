@@ -7,6 +7,10 @@
   * [Internet Connection Sharing](ics.md)
   * [Creating Infusions](creating_infusions.md)
   * [Serial UART](serial_uart.md)
+  * [DIP Switches](dip_switches.md)
+  * [PlaceHolder](guide1.md)
+  * [PlaceHolder](guide1.md)
+  * [PlaceHolder](guide1.md)
   * [PlaceHolder](guide1.md)
 
 [Video Tutorials]()
