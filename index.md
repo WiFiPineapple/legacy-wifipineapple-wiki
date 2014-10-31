@@ -13,6 +13,7 @@ Videos!
 ## Infusion Pages
 
  + [Blackout](infusions/blackout.md)
+ + [Commander](infusions/commander.md)
 
 - WiFi_Pineapple
 - Wiki - **Read this please.**
