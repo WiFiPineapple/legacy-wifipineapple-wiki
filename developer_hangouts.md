@@ -1,5 +1,7 @@
 # Developer Hangouts
 
+Note: This page is embedded with a number of youtube videos and make take a second to load.
+
 ## WiFi Pineapple 2.0.2 Firmware - PineAP
 
 [](https://www.youtube.com/watch?v=40Igim3upL0&list=UUTkpeicFNBuHJCvp4LZEuvw)

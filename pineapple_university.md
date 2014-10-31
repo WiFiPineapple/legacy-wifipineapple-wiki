@@ -1,5 +1,7 @@
 # Pineapple University
 
+Note: This page is embedded with a number of youtube videos and make take a second to load.
+
 ## Hardware Overview
 
 [](https://www.youtube.com/watch?v=P9Q0SWVo8Bo&index=8&list=PLW5y1tjAOzI1benBAgqAbMExp5dWkQLgO)
