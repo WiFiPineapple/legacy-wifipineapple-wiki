@@ -1,28 +1,31 @@
 # Welcome to the official WiFi Pineapple Wiki!
 
-Welcome to the new wiki for the WiFi Pineapple (official site)! The current iteration of this wiki is geared towards the Mark 5 Revision of the WiFi Pineapple. In this wiki you can find guides and information for both the hardware and software. Please visit the Legacy section for FAQs and guides for older hardware. For information about infusions, Infusions is the place.
+Welcome to the new wiki for the [WiFi Pineapple (official site)!](https://wifipineapple.com/) The current iteration of this wiki is geared towards the Mark 5 Revision of the WiFi Pineapple. In this wiki you can find guides and information for both the hardware and software. Please visit the [Legacy](legacy.md) section for FAQs and guides for older hardware. For information about infusions, [Infusions](infusions.md) is the place.
 
 Factory Flashing 2.0.2 (Offline Mode)
 Follow these instructions to flash the WiFi Pineapple Mark V in offline mode.
 
-* Download the factory 2.0.2 image (MD5: d7ca069eaacfb86781da0aa27cea78bd)
-* With the WiFi Pineapple powered off, set the DIP switches to up, up, up, up, down (from left to right)
-* Connect the WiFi Pineapple via Ethernet cable to your computer and set your Ethernet interface to a static IP address of 192.168.1.2 / netmask 255.255.255.0
-* Power on the WiFi Pineapple. After 10 seconds you may browse to http://192.168.1.1
-From the web interface upload the factory-2.0.2.bin file and wait for flashing to complete.
-Finally set the DIP switches back to the default all-up configuration, ensure the SD card is inserted and powercycle the device.
-You will now be running firmware version 2.0.2
-Important Pages
--WiFi_Pineapple
--Wiki - Read this please.
--Karma
--Webinterface_API
--Legacy - Mark IV
--Firmware
--WebUI
--Infusions
--Hak5 Forums
--HDK
+  1. Download the factory 2.0.2 image (MD5: d7ca069eaacfb86781da0aa27cea78bd)
+  2. With the WiFi Pineapple powered off, set the DIP switches to up, up, up, up, down (from left to right)
+  3. Connect the WiFi Pineapple via Ethernet cable to your computer and set your Ethernet interface to a static IP address of 192.168.1.2 / netmask 255.255.255.0
+  4. Power on the WiFi Pineapple. After 10 seconds you may browse to http://192.168.1.1
+  5. From the web interface upload the factory-2.0.2.bin file and wait for flashing to complete.
+  6. Finally set the DIP switches back to the default all-up configuration, ensure the SD card is inserted and powercycle the device.
+  7. You will now be running firmware version 2.0.2
+
+
+## Important Pages
+
+- WiFi_Pineapple
+- Wiki - **Read this please.**
+- Karma
+- Webinterface_API
+- Legacy - Mark IV
+- Firmware
+- WebUI
+- Infusions
+- Hak5 Forums
+- HDK
 
 Guides
 Please note these guides are aimed to work on the Mark V Revision hardware.
