@@ -4,7 +4,7 @@
 
 [Start Here]()
 
-  * [What is the Wifi Pineapple?](pineapple.md)
+  * [What is the WiFi Pineapple?](pineapple.md)
   * [What is Karma?](karma.md)
   * [What is the WebUI?](webui.md)
   * [What is the HDK?](hdk.md)
