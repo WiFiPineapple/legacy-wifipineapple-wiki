@@ -5,7 +5,7 @@
 [Guides]()
 
   * [Internet Connection Sharing](ics.md)
-  * [PlaceHolder](guide1.md)
+  * [Creating Infusions](creating_infusions.md)
   * [PlaceHolder](guide1.md)
   * [PlaceHolder](guide1.md)
 
