@@ -4,6 +4,11 @@ Welcome to the new wiki for the [WiFi Pineapple (official site)!](https://wifipi
 
 ## Important Pages
 
+Getting Started!
+Guides!
+Videos!
+
+
 - WiFi_Pineapple
 - Wiki - **Read this please.**
 - Karma
@@ -76,7 +81,9 @@ Introduction to Mobile Broadband
 3G Managed Modems
 Tutorial: Hijacking DNS
 Tutorial: Sniffing Passwords with SSLStrip
-Overview
+
+## Overview
+
 The WiFi Pineapple Mark V is the latest generation wireless network auditing tool from Hak5. With its custom, purpose built hardware and software, the WiFi Pineapple enable users to quickly and easily deploy advanced attacks using our intuitive web interface.
 
 Hak5 focuses on making easily accessible, affordable and infinitely expandable wireless hacking tools. Since 2008 the WiFi Pineapple has been serving penetration testers, law enforcement, military and government with a versatile wireless auditing platform for almost any deployment scenario.

@@ -18,7 +18,13 @@
   * [Serial UART](serial_uart.md)
   * [DIP Switches](dip_switches.md)
   * [PlaceHolder](guide1.md)
-  * [Video Tutorials](videos.md)
+
+[Videos]()
+
+  * [Pineapple University](pineapple_university.md)
+  * [Video Guides](video_guides.md)
+  * [Developer Hangouts](developer_hangouts.md)
+
 
 [API](api.md)
 
@@ -27,7 +33,6 @@
 [References]()
 
   * [Legacy Pineapples](legacy.md)
-  * [PlaceHolder](guide1.md)
   * [PlaceHolder](guide1.md)
 
 [Forums](https://forums.hak5.org/index.php?/forum/64-wifi-pineapple-jasager/)
