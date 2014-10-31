@@ -6,7 +6,7 @@
 
   * [Internet Connection Sharing](ics.md)
   * [Creating Infusions](creating_infusions.md)
-  * [PlaceHolder](guide1.md)
+  * [Serial UART](serial_uart.md)
   * [PlaceHolder](guide1.md)
 
 [Video Tutorials]()
