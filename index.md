@@ -8,6 +8,9 @@ Getting Started!
 Guides!
 Videos!
 
+## Infusion Pages
+
+ + [Blackout](infusions/blackout.md)
 
 - WiFi_Pineapple
 - Wiki - **Read this please.**
@@ -23,64 +26,6 @@ Videos!
 Guides
 Please note these guides are aimed to work on the Mark V Revision hardware.
 
-Internet Connection Sharing
-Linux ICS
-Windows ICS
-Mac OSX ICS
-Android ICS
-Guides
-Creating Infusions
-Serial UART
-DIP Switches
-Captive Portal Setup
-Factory Reset
-Compatible_Modems
-Compatible_Wireless_Cards
-Build_guide*
-SSLsplit on WiFi Pineapple
-SSL VPN from WiFi Pineapple
-Change Pineapple Interface to SSL
-WarWalking with Kismet
-PineShock: Abusing Shellshock via a Pineapple
-*The Build guide is for compiling a custom firmware image and NOT for setting up your pineapple for the first use.
-
-Video Guides
-Wardriving with Wifi Pineapple Mark V running Kismet
-Pineapple Wifi Intro and Reconnaissance View
-Writing a captive portal for the latest version of Evil Portal
-How to Unbrick
-WPS Cracking Tutorial
-Upgrade Firmware
-WiFi Pineapple, Karma, sslstrip and Captive Portals
-Infusions
-Evil Portal 2.3 - Fix all the bugs!
-Collecting Browser Data With Evil Portal and Get
-Pineapple Data Encryption
-SMSer 2.2 Overview
-ADS-B Tracker
-Pineapple Stats
-SSL Strip
-Deauth
-Pineapple Bar
-Client Mode
-Karma
-Developer Hangouts
-WiFi Pineapple 2.0.2 Firmware - PineAP
-LAUNCH EVENT - Firmware 1.4.0 for WiFi Pineapple Mark V
-Launch Event - WiFi Pineapple Firmware 1.1.0
-WiFi Pineapple 1.1.0 BETA Release Chat
-Pineapple University
-Hardware Overview
-First Boot and Firmware Flashing
-Updates and Infusions
-Connecting to a nearby AP in Client Mode
-Linux Internet Connection Sharing
-Windows Internet Connection Sharing
-Introduction to Mobile Broadband
-4G LTE Modem Tethering
-3G Managed Modems
-Tutorial: Hijacking DNS
-Tutorial: Sniffing Passwords with SSLStrip
 
 ## Overview
 
