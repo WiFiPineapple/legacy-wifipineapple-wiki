@@ -4,30 +4,10 @@
 
 Welcome to the new wiki for the [WiFi Pineapple (official site)!](https://wifipineapple.com/) The current iteration of this wiki is geared towards the Mark 5 Revision of the WiFi Pineapple. In this wiki you can find guides and information for both the hardware and software. Please visit the [Legacy](legacy.md) section for FAQs and guides for older hardware. For information about infusions, [Infusions](infusions.md) is the place.
 
-## Important Pages
-
-Getting Started!
-Guides!
-Videos!
-
 ## Infusion Pages
 
  + [Blackout](infusions/blackout.md)
  + [Commander](infusions/commander.md)
-
-- WiFi_Pineapple
-- Wiki - **Read this please.**
-- Karma
-- Webinterface_API
-- Legacy - Mark IV
-- Firmware
-- WebUI
-- Infusions
-- Hak5 Forums
-- HDK
-
-Guides
-Please note these guides are aimed to work on the Mark V Revision hardware.
 
 
 ## Overview
