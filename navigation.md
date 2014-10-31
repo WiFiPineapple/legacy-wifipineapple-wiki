@@ -14,26 +14,32 @@
 [Guides]()
 
   * [Internet Connection Sharing](ics.md)
-  * [Creating Infusions](creating_infusions.md)
+  * [Legacy Pineapples](legacy.md)
   * [Serial UART](serial_uart.md)
   * [DIP Switches](dip_switches.md)
-  * [PlaceHolder](guide1.md)
+  * [Captive Portal Setup](captive_portal.md)
+  * [Factory Reset](reset.md)
+  * [Compatible Modems](compatible_modems.md)
+  * [Compatible Wireless Cards](compatible_wifi_cards.md)
+  * [SSLsplit on WiFi Pineapple](http://champagneandsecurity.wordpress.com/2014/07/26/sslsplit-on-wifi-pineapple/)
+  * [SSL VPN from WiFi Pineapple](https://forums.hak5.org/index.php?/topic/32784-how-to-tunnel-mk5-through-vpn/?p=246346)
+  * [Add SSL to Pineapple Interface](add_ssl.md)
+  * [WarWalking with Kismet](https://forums.hak5.org/index.php?/topic/33626-warwalking-with-pineapple-and-battery/#entry250802)
+  * [PineShock](http://d.uijn.nl/?p=32)
 
 [Videos]()
 
   * [Pineapple University](pineapple_university.md)
-  * [Video Guides](video_guides.md)
   * [Developer Hangouts](developer_hangouts.md)
+  * [Video Guides](video_guides.md)
 
+[Development]()
 
-[API](api.md)
+  * [API](api.md)
+  * [Creating Infusions](creating_infusions.md)
+  * [MKV Build Guide](build_guide.md)
 
 [Firmware](firmware.md)
-
-[References]()
-
-  * [Legacy Pineapples](legacy.md)
-  * [PlaceHolder](guide1.md)
 
 [Forums](https://forums.hak5.org/index.php?/forum/64-wifi-pineapple-jasager/)
 
