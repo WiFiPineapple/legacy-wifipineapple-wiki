@@ -23,7 +23,7 @@
   * [Compatible Wireless Cards](compatible_wifi_cards.md)
   * [SSLsplit on WiFi Pineapple](http://champagneandsecurity.wordpress.com/2014/07/26/sslsplit-on-wifi-pineapple/)
   * [SSL VPN from WiFi Pineapple](https://forums.hak5.org/index.php?/topic/32784-how-to-tunnel-mk5-through-vpn/?p=246346)
-  * [Add SSL to Pineapple Interface](add_ssl.md)
+  * [Add SSL to Pineapple Web UI](add_ssl.md)
   * [WarWalking with Kismet](https://forums.hak5.org/index.php?/topic/33626-warwalking-with-pineapple-and-battery/#entry250802)
   * [PineShock](http://d.uijn.nl/?p=32)
 
