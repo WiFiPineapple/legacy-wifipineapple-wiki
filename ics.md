@@ -4,11 +4,11 @@
 
 With an Ethernet cable connected to the WiFi Pineapple, Internet access may be shared from an online computer. This is typically achieved with a cable connected between a notebook computer and the WiFi Pineapple directly. The notebook computer requires some form of Internet access (typically through WiFi or Mobile Broadband).
 
-By default the WiFi Pineapple has an IP address of 172.16.42.1 and will assign WiFi clients with IP addresses in teh 172.16.42.100-150 range via an onboard DHCP server. The default gateway of the WiFi Pineapple is 172.16.42.42. This means the WiFi Pineapple is looking for an Internet connection from a host with this IP address. A simple tethering script is available for Linux host which will automatically setup the IP and forwarding. Download the script from the scripts directory [here](scripts/wp5.sh)
+By default the WiFi Pineapple has an IP address of 172.16.42.1 and will assign WiFi clients with IP addresses in the 172.16.42.100-150 range via an onboard DHCP server. The default gateway of the WiFi Pineapple is 172.16.42.42. This means the WiFi Pineapple is looking for an Internet connection from a host with this IP address. A simple tethering script is available for Linux host which will automatically setup the IP and forwarding.
 
-  1. Power the WiFi Pineapple
+  1. Power on the WiFi Pineapple
   2. Connect an Ethernet cable directly between the LAN port on the computer and the LAN port on the WiFi Pineapple
-  3. On the computer, download the wp5.sh script from the scripts directory [here](scripts/wp5.sh)
+  3. On the computer, download the wp5.sh script from wifipineapple.com [here](https://wifipineapple.com/mk5/wp5.sh)
   4. Make the script executable with `chmod +x wp5.sh` and run the script as root (e.g. `sudo ./wp5.sh`)
   5. Follow the on screen prompts
 
