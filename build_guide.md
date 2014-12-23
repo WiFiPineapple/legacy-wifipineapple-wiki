@@ -24,7 +24,7 @@ The instructions below detail the process of generating firmware images for the 
 ### Download and extract source
 
 ```
-wget http://wiki.wifipineapple.com/uploads/source.tar.gz
+wget http://wifipineapple.com/mk5/source.tar.gz
 tar -zxvf source.tar.gz
 cd ./MK5
 ```
