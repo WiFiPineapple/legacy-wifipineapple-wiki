@@ -4,12 +4,6 @@
 
 Welcome to the new wiki for the [WiFi Pineapple (official site)!](https://wifipineapple.com/) The current iteration of this wiki is geared towards the Mark 5 Revision of the WiFi Pineapple. In this wiki you can find guides and information for both the hardware and software. Please visit the [Legacy](legacy.md) section for FAQs and guides for older hardware. For information about infusions, [Infusions](infusions.md) is the place.
 
-## Infusion Pages
-
- + [Blackout](infusions/blackout.md)
- + [Commander](infusions/commander.md)
-
-
 ## Overview
 
 The WiFi Pineapple Mark V is the latest generation wireless network auditing tool from Hak5. With its custom, purpose built hardware and software, the WiFi Pineapple enable users to quickly and easily deploy advanced attacks using our intuitive web interface.
