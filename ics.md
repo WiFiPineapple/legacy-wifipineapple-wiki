@@ -8,7 +8,7 @@ By default the WiFi Pineapple has an IP address of 172.16.42.1 and will assign W
 
   1. Power on the WiFi Pineapple
   2. Connect an Ethernet cable directly between the LAN port on the computer and the LAN port on the WiFi Pineapple
-  3. On the computer, download the wp5.sh script from wifipineapple.com [here](https://wifipineapple.com/mk5/wp5.sh)
+  3. On the computer, download the wp5.sh script from wifipineapple.com [here](https://wifipineapple.com/mk5/scripts/wp5.sh)
   4. Make the script executable with `chmod +x wp5.sh` and run the script as root (e.g. `sudo ./wp5.sh`)
   5. Follow the on screen prompts
 
