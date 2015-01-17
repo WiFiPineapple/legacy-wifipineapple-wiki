@@ -33,7 +33,7 @@ In case you want to upgrade manually or are having issues with the webinterface,
 
 Bricked your WiFi Pineapple MKV? Unbricking is easy and doesn't require any extra hardware!
 
-  1. Download the [special factory image](https://wifipineapple.com/mk5/factory-1.2.0.bin). This image is the WiFi Pineapple MKV's 1.2.0 firmware, packaged differently to allow unbricking. Please verify it's md5 checksum to be **167b1533b9dd5c49f7107413fb960bfa**.
+  1. Download the [special factory image](https://www.wifipineapple.com/mk5/factory.bin). This image is the WiFi Pineapple MKV's 2.0.4 firmware, packaged differently to allow unbricking. Please verify it's md5 checksum to be **8f684011ad40ca601cf159cd3381f7e0**.
   2. Power off your WiFi Pineapple MKV and set the DIP switches to up, up, up, up, down (from left to right).
   3. Connect to your WiFi Pineapple MKV via ethernet and set your network interface to a static IP of 192.168.1.2
   4. Boot up the WiFi Pineapple MKV. After around five seconds, you can navigate to http://192.168.1.1
