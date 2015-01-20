@@ -24,7 +24,7 @@ Begin by powering on the WiFi Pineapple and directly connecting an Ethernet cabl
 
 ![](imgs/windows_ics1.png)
 
-From the Sharing tab, check the box labeled *Allow other network users to connect through this computer's Internet connection* and click OK.
+From the Sharing tab, check the box labeled *Allow other network users to connect through this computer's Internet connection* and click OK. You may need to select an network connection if there is more than one.
 
 ![](imgs/windows_ics2.png)
 
@@ -36,7 +36,7 @@ Select **Internet Protocol Version 4 (TCP/IP)** and select Properties.
 
 ![](imgs/windows_ics4.png)
 
-Check *Use the following IP address* and specify 172.16.42.1 for the IP address and 255.255.255.0 for subnet. Leave the default gateway blank. Next check **Use the following DNS server addresses** and provide your preferred DNS server (e.g. Google's 8.8.8.8) and click OK then Close.
+Check *Use the following IP address* and specify 172.16.42.42 for the IP address and 255.255.255.0 for subnet. Leave the default gateway blank. Next check **Use the following DNS server addresses** and provide your preferred DNS server (e.g. Google's 8.8.8.8) and click OK then Close.
 
 ![](imgs/windows_ics5.png)
 
