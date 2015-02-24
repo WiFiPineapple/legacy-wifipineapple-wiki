@@ -50,7 +50,7 @@ In this guide, you will learn how to set up a captive portal on your WiFi Pineap
   WARNING! Use vigilance when downloading files from third-party sources. If you choose to download files from a source other than http://wifipineapple.com, you do so at your own risk.
 
   17. Download the **"portal.zip"** package and save it to your desktop
-  18. **Unzip** the portal.zip package to your desktop
+  18. Open a terminal and **unzip** the portal.zip package to your desktop
       ```
       cd Desktop
       unzip portal.zip
