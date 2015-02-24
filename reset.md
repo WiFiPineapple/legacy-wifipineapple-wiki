@@ -4,7 +4,7 @@ A factory reset is used to reset the WiFi Pineapple back to its default settings
 
 ## Factory Reset Via Web Interface
 
-If you're experiencing issues with your WiFi Pineapple or you simply want to restart from scratch, you can use the web interface to a perform a factory reset by completing the following steps.
+If you're experiencing issues with your WiFi Pineapple or you simply want to restart from scratch, you can use the web interface to perform a factory reset by completing the following steps.
 
   1. **Connect** to your WiFi Pineapple via Wi-Fi or ethernet cable
   2. Open a web browser and **navigate** to your WiFi Pineapple's web interface: http://172.16.42.1:1471
