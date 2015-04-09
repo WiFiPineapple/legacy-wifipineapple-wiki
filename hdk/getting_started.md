@@ -8,7 +8,7 @@
 4. A programmer (an arduino is fine)
 5. (optionally) a USB to serial converter.
 
-![The HDK as it arrives](imgs/hdk1.png)
+![The HDK as it arrives](../imgs/hdk1.png)
 
 ## Set up of the HDK in the Pineapple
 
@@ -20,16 +20,18 @@ Once this command has been run, a new device /dev/spidev1.0 will be created.
 
 ## Soldering the HDK
 
-![](imgs/hdk2.png)
+![Main header to teh MK5](../imgs/hdk2.png)
 
-![](imgs/hdk3.png)
+![ICSP Header](../imgs/hdk3.png)
 
-![](imgs/hdk4.png)
+![Additional Pins](../imgs/hdk4.png)
 
 
 ## Programming the HDK
 
-![](imgs/hdk5.png)
+The easiest way to program the HDK is via an Arduino. This allows you to use the Arduino IDE, (optionally test) and deploy the code via 
+
+![Arduino Gui](../imgs/hdk5.png)
 
 ### Example program 
 
@@ -37,7 +39,11 @@ Once this command has been run, a new device /dev/spidev1.0 will be created.
 
 ```
 
-## Testing
+### Programming the HDK
+
+![Arduino programmer with the HDK](../imgs/hdk6.png)
+
+### Testing
 
 
 
