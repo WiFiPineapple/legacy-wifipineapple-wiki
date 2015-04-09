@@ -6,7 +6,8 @@
 2. A Wifi Pineapple
 3. A Soldering iron
 4. A programmer (an arduino is fine)
-5. (optionally) a USB to serial converter.
+5. Wires
+6. (optionally) a USB to serial converter.
 
 ![The HDK as it arrives](../imgs/hdk1.png)
 
