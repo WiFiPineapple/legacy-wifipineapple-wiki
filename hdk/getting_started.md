@@ -7,7 +7,7 @@
 3. A Soldering iron
 4. A programmer (an arduino is fine)
 5. Wires
-6. (optionally) a USB to serial converter.
+6. (optionally, but highly recommended) a USB to serial converter.
 
 ![The HDK as it arrives](../imgs/hdk1.png)
 
@@ -34,9 +34,21 @@ The easiest way to program the HDK is via an Arduino. This allows you to use the
 
 ![Arduino Gui](../imgs/hdk5.png)
 
-### Example program 
+### Programming the HDK
+
+![Arduino programmer with the HDK](../imgs/hdk6.png)
+
+### Testing.
+
+This program will echo out anything recieved on the SPI interface (from the pineapple) on the serial port (using the serial to USB adapter). This is by no means the only way to test everything is working, but serial is really helpful for debugging.
 
 You can obtain the original of this code from here: https://gist.github.com/chrismeyersfsu/3317769
+
+The program will need to be uploaded to the HDK. Once complete, run the command:
+
+`echo "Testing 1 2 3" >/dev/spidev1.0`
+
+On the serial console of the HDK, the words "Testing 1 2 3" should appear.
 
 ```C
 // Written by Nick Gammon
@@ -103,13 +115,6 @@ void loop (void)
     
 }  // end of loop
 ```
-
-### Programming the HDK
-
-![Arduino programmer with the HDK](../imgs/hdk6.png)
-
-### Testing
-
 
 
 ## Additional Information + Useful Links
