@@ -5,9 +5,9 @@
 1. The HDK
 2. A Wifi Pineapple
 3. A Soldering iron
-4. A programmer (an arduino is fine)
+4. Header Pins (Female and/or Male)
 5. Wires
-6. (optionally, but highly recommended) a USB to serial converter.
+6. A USB to serial converter or arduino.
 
 ![The HDK as it arrives](../imgs/hdk1.png)
 
@@ -21,16 +21,21 @@ Once this command has been run, a new device /dev/spidev1.0 will be created.
 
 ## Soldering the HDK
 
-![Main header to teh MK5](../imgs/hdk2.png)
+When soldered, the HDK will look something like this:
+
+![Main header to the MK5](../imgs/hdk2.png)
 
 ![ICSP Header](../imgs/hdk3.png)
 
 ![Additional Pins](../imgs/hdk4.png)
 
+NB, the pinout for the HDK is compatible with Arduino Shields. If you want this, don't use the female headers shown.
 
 ## Programming the HDK
 
-The easiest way to program the HDK is via an Arduino. This allows you to use the Arduino IDE, (optionally test) and deploy the code via 
+The easiest way to program the HDK is via a USB to serial converter (a arduino can be used, without the ATMEGA Chip). If you want to use the Arduino, look at the section "Uploading Using an Arduino Board" on this page: http://www.arduino.cc/en/Tutorial/ArduinoToBreadboard
+
+Either way, you can use the Arduino IDE to compile and deploy the code. Set the IDE to Arduino Duemilanove, adn the correct serial port.  
 
 ![Arduino Gui](../imgs/hdk5.png)
 
