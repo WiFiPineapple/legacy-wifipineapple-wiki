@@ -1,15 +1,15 @@
 # Getting Started with the HDK
 
+![The HDK as it arrives](../imgs/hdk1.png)
+
 ## Things you will need
 
 1. The HDK
 2. A Wifi Pineapple
 3. A Soldering iron
 4. Header Pins (Female and/or Male)
-5. Wires
-6. A USB to serial converter or arduino.
-
-![The HDK as it arrives](../imgs/hdk1.png)
+5. A USB to serial converter or arduino.
+6. Wires (Optional, but very useful)
 
 ## Set up of the HDK in the Pineapple
 
