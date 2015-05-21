@@ -23,11 +23,7 @@ Once this command has been run, a new device /dev/spidev1.0 will be created.
 
 When soldered, the HDK will look something like this:
 
-![Main header to the MK5](../imgs/hdk2.png)
-
-![ICSP Header](../imgs/hdk3.png)
-
-![Additional Pins](../imgs/hdk4.png)
+![HDK soldered and connected to the MK5](../imgs/hdk2.jpg)
 
 NB, the pinout for the HDK is compatible with Arduino Shields. If you want this, don't use the female headers shown.
 
@@ -35,13 +31,13 @@ NB, the pinout for the HDK is compatible with Arduino Shields. If you want this,
 
 The easiest way to program the HDK is via a USB to serial converter (a arduino can be used, without the ATMEGA Chip). If you want to use the Arduino, look at the section "Uploading Using an Arduino Board" on this page: http://www.arduino.cc/en/Tutorial/ArduinoToBreadboard
 
-Either way, you can use the Arduino IDE to compile and deploy the code. Set the IDE to Arduino Duemilanove, adn the correct serial port.  
+Either way, you can use the Arduino IDE to compile and deploy the code. Set the IDE to Arduino Duemilanove, and the correct serial port.  
 
 ![Arduino Gui](../imgs/hdk5.png)
 
 ### Programming the HDK
 
-![Arduino programmer with the HDK](../imgs/hdk6.png)
+![Arduino programmer with the HDK](../imgs/hdk3.png)
 
 ### Testing.
 
@@ -120,7 +116,6 @@ void loop (void)
     
 }  // end of loop
 ```
-
 
 ## Additional Information + Useful Links
 
