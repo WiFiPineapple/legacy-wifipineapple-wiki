@@ -37,8 +37,6 @@ Either way, you can use the Arduino IDE to compile and deploy the code. Set the 
 
 ### Programming the HDK
 
-![Arduino programmer with the HDK](../imgs/hdk3.png)
-
 ### Testing.
 
 This program will echo out anything recieved on the SPI interface (from the pineapple) on the serial port (using the serial to USB adapter). This is by no means the only way to test everything is working, but serial is really helpful for debugging.
