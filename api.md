@@ -138,7 +138,7 @@ This will set a variable named "$pineapple" up to be with the Pineapple API obje
  * non­blocking manner.
  * @param string $command The command to execute
  */
- $pineapple­>execute($command)
+ $pineapple->execute($command)
 
 
 /**
@@ -147,7 +147,7 @@ This will set a variable named "$pineapple" up to be with the Pineapple API obje
  * @param string $destination optional: 'internal' or 'sd'
  * @return boolean Successful initiation of package install
  */
- $pineapple­>installPackage($pkg_or_array, $destination = "internal")
+ $pineapple->installPackage($pkg_or_array, $destination = "internal")
 
 
 /**
@@ -165,7 +165,7 @@ This will set a variable named "$pineapple" up to be with the Pineapple API obje
  * @param string $password Password to verify
  * @return boolean correct
  */
- $pineapple-­>verifyPassword($password)
+ $pineapple->verifyPassword($password)
 
 
 /**
@@ -173,7 +173,7 @@ This will set a variable named "$pineapple" up to be with the Pineapple API obje
  * @param string $notification The notification to be sent
  * @return null
  */
- $pineapple­->sendNotification($notification)
+ $pineapple->sendNotification($notification)
 
 
 /**
@@ -183,7 +183,7 @@ This will set a variable named "$pineapple" up to be with the Pineapple API obje
  * see /pineapple/components/infusions/{name}/tabs
  * @param array $tabs An array of tabs to draw
  */
- $pineapple­->drawTabs(array $tabs)
+ $pineapple->drawTabs(array $tabs)
 ```
 
 ## JavaScript API Functions
