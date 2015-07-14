@@ -117,4 +117,5 @@ void loop (void)
 
 ## Additional Information + Useful Links
 
+[Projects](projects.md)
 https://randomcoderdude.wordpress.com/2013/08/15/spi-over-gpio-in-openwrt/
