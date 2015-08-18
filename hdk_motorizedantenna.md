@@ -1,3 +1,3 @@
 # Coming Soon
 
-[Back](hdk_getting_started.md)
+[Back](hdk_gettingstarted.md)
