@@ -29,3 +29,8 @@ The WiFi Pineapple Mark V HDK is an Arduino Pro based microcontroller board feat
   + HDK PIN 15 -- MK5 GPIO 20
   + HDK PIN 16 -- MK5 GPIO 19
   + HDK PIN 17 -- MK5 GPIO 18
+
+## Extra Info
+
+  + [Getting Started](hdk_getting_started.md)
+  + [Starter Projects](hdk_projects.md)
