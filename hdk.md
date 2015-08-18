@@ -32,5 +32,5 @@ The WiFi Pineapple Mark V HDK is an Arduino Pro based microcontroller board feat
 
 ## Extra Info
 
-  + [Getting Started](hdk/getting_started.md)
-  + [Starter Projects](hdk/projects.md)
+  + [Getting Started](hdk_getting_started.md)
+  + [Starter Projects](hdk_projects.md)
