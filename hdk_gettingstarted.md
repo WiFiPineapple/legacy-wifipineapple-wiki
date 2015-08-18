@@ -1,6 +1,6 @@
 # Getting Started with the HDK
 
-![The HDK as it arrives](./imgs/hdk1.png)
+![The HDK as it arrives](imgs/hdk1.png)
 
 ## Things you will need
 
@@ -23,7 +23,7 @@ Once this command has been run, a new device /dev/spidev1.0 will be created.
 
 When soldered, the HDK will look something like this:
 
-![HDK soldered and connected to the MK5](./imgs/hdk2.jpg)
+![HDK soldered and connected to the MK5](imgs/hdk2.jpg)
 
 NB, the pinout for the HDK is compatible with Arduino Shields. If you want this, don't use the female headers shown.
 
@@ -33,7 +33,7 @@ The easiest way to program the HDK is via a USB to serial converter (a arduino c
 
 Either way, you can use the Arduino IDE to compile and deploy the code. Set the IDE to Arduino Duemilanove, and the correct serial port.  
 
-![Arduino Gui](./imgs/hdk5.png)
+![Arduino Gui](imgs/hdk5.png)
 
 ### Programming the HDK
 
