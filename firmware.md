@@ -2,7 +2,7 @@
 
 ## Overview
 
-The WiFi Pineapples firmware is a highly modified version of OpenWRT packed with the WiFi Pineapples WebUI, aswell as tools to aid your pentesting such as DNSSpoof, URLSnarf, Karma, nmap, mdk3 and much more.
+The WiFi Pineapples firmware is a highly modified version of OpenWRT packed with the WiFi Pineapples WebUI, as well as tools to aid your pentesting such as DNSSpoof, URLSnarf, Karma, nmap, mdk3 and much more.
 
 ## Downloads
 

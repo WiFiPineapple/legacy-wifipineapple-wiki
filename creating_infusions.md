@@ -69,7 +69,7 @@ else { echo('DNSSpoof is Running'); }
 </html>
 ```
 
-The above code makes a refresh button that will refresh the small tile named ExampleInfusion, aswell as telling you whether 'DNSSpoof' is running or not. For the large_tile, we will add a textbox and a submit to demonstrate the popup() function and to demonstrate the AJAX forms.
+The above code makes a refresh button that will refresh the small tile named ExampleInfusion, as well as telling you whether 'DNSSpoof' is running or not. For the large_tile, we will add a textbox and a submit to demonstrate the popup() function and to demonstrate the AJAX forms.
 
 In your large_tile.php, you need this code :
 
