@@ -1,6 +1,6 @@
 # WiFi Pineapple MKV
 
-The WiFi Pineapple is a Wireless Pen-Test Drop Box, The current revision sports a 400Mhz Atheros AR9331 SoC, 16MB of ROM, 64MB of RAM and an onboard Realtek RTL8187L Chipset, aswell as MicroSD card support and 5 [DIP Switches](dip_switches.md).
+The WiFi Pineapple is a Wireless Pen-Test Drop Box, The current revision sports a 400Mhz Atheros AR9331 SoC, 16MB of ROM, 64MB of RAM and an onboard Realtek RTL8187L Chipset, as well as MicroSD card support and 5 [DIP Switches](dip_switches.md).
 
 
 ## Hardware
