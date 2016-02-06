@@ -2,22 +2,22 @@
 
 ## What is a captive portal?
 
-When a client connects to a WiFi Pineapple or any access point that has a captive portal present, the client will automatically be redirected to a special web page. This special web page is known as a landing page, and typically requires clients to perform an action before they can use the internet as intended.
+When a client connects to a WiFi Pineapple or any access point that has a captive portal present, the client will automatically be redirected to a special web page. This special web page is known as a landing page, and typically requires clients to perform an action before they can use the internet as intended. This usually entails logging in or agreeing to a Terms Of Use agreement.
 
 ## Who uses captive portals and why?
 
-Captive portals have many applications but are most commonly used to authenticate clients. Public Wi-Fi hotspot providers, such as Starbucks and McDonald's, typically use a captive portal to redirect clients to a web page containing a user agreement or terms of use. In this scenario, clients must agree to the terms of use before they are authenticated and permitted to use the internet freely. Some businesses provide public Wi-Fi hotspots solely because the implementation of a captive portal enables them to advertise products and services, solicit subscriptions, sell internet service, and satisfy other business-related agendas.
+Captive portals have many applications but are most commonly used to authenticate clients. Public Wi-Fi hotspot providers, such as Starbucks and McDonald's, will use a captive portal to redirect clients to a web page containing an Acceptable Use Policy (AUP). In this scenario, clients must agree to the terms of use before they are authenticated and permitted to use the internet freely. Some businesses provide public Wi-Fi hotspots solely because the implementation of a captive portal enables them to advertise products and services, solicit subscriptions, sell internet service, and satisfy other business-related agendas.
 
 Although captive portals have many legitimate uses, like those described above, it's important to note that they also have the potential of being used maliciously by criminal hackers. By providing clients with a well-designed captive portal that is professional in appearance, criminal hackers are able to deceive unsuspecting clients and provide them with a sense of legitimacy. This misled sense of legitimacy, as a result, increases the client's susceptibility to malicious attacks. For example, it's a known fact that criminal hackers have successfully used captive portals to distribute malware and gather sensitive user data, including login credentials, email addresses, and financial information.
 
 ## Guide
 
-In this guide, you will learn how to set up a captive portal on your WiFi Pineapple using the Evil Portal infusion. To improve the quality of your user experience, you will also be provided with a package containing custom splash page images and HTML code. If you prefer, you can watch the [video tutorial here](http://youtu.be/nw4bo4rXGgQ) instead.
+In this guide, you will learn how to set up a captive portal on your WiFi Pineapple using the "Evil Portal" infusion. To improve the quality of your user experience, you will also be provided with a package containing custom splash page images and HTML code. If you prefer, you can watch the [video tutorial here](http://youtu.be/nw4bo4rXGgQ) instead.
 
-  1. Connect to your WiFi Pineapple via Wi-Fi or ethernet cable
-  2. Open a web browser and Log into your WiFi Pineapple's web interface
+  1. Connect to your WiFi Pineapple via Wi-Fi or an ethernet cable
+  2. Open a web browser and log into your WiFi Pineapple's web interface at
      http://172.16.42.1:1471
-     Before proceeding to the next step, make sure your Pineapple is connected to the internet. The easiest way to connect your Pineapple to the internet is to use the client mode feature in the network tile.
+     Before proceeding to the next step, make sure your Pineapple is connected to the internet. The easiest way to connect your Pineapple to the internet is to use the "Client Mode" feature in the network tile.
   3. Open the **"Pineapple Bar"** tile
   4. Select the **"Pineapple Bar: Available Infusions"** tab
   5. Find **"Evil Portal"** in the list of infusions and click **"Install"**

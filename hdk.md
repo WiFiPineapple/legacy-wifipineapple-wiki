@@ -1,7 +1,5 @@
 # HDK
 
-
-
 The WiFi Pineapple Mark V HDK is an Arduino Pro based microcontroller board featuring the ATmega328.
 
 ![](imgs/hdk.jpg)

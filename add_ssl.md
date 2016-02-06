@@ -2,9 +2,12 @@
 
 ## Why
 
-Since the Pineapples are prone to attacks, individuals love to sniff the clear-text credentials as you log into the HTTP interface. This quick guide should walk-through users' on how to protect themselves via SSL...
+As the WiFi Pineappple has become more popular, it has also become more of a target. By default, the WebUI is served using HTTP which is unencrypted. This means that anyone also connected to the Pineapple over WiFi could sniff the network traffic and possibly be able to determine the authentication details to be able to access the WebUI themselves. A solution to this is to use SSL encryption over the HTTP connection (otherwise known as HTTPS).
 
 ## Install Packages
+There are a few packages that we will need to install first.
+
+Note: You will need an active internet connection on your Pineapple to perform this step.
 
 ```
 opkg update
@@ -13,13 +16,14 @@ opkg --dest usb install openssl-util
 ```
 
 ## Create config files
+Next we need to configure SSL.
 
 ```
 mkdir -p /etc/ssl/certs
 nano /etc/ssl/openssl.cnf
 ```
 
-example contents openssl.cnf:
+Here is an openssl.cnf if you don't want to customize anything:
 
 ```
 dir					= .
@@ -92,12 +96,14 @@ subjectKeyIdentifier			= hash
 ```
 
 ## Prepare Certificates
+Now we begin creating our certificates which will be used in the encryption process.
 
 ```
 cd /etc/ssl/certs
 ```
 
 ### Make Private Keys
+To generate the private SSL keys, issue the following commands:
 
 ```
 openssl genrsa -aes128 -out server.key 2048
@@ -105,24 +111,28 @@ openssl genrsa -aes128 -out ca.key 2048
 ```
 
 ### Remove Password From Private Key
+We need to remove the password from our private key for obvious security reasons.
 
 ```
 openssl rsa -in server.key -out server.key
 ```
 
 ### Generate CA Certificate
+The CA certificate will be used to confirm the Pineapple's identity to our browser.
 
 ```
 openssl req -new -x509 -days 3650 -key ca.key -out ca.pem
 ```
 
 ### Generate Certificate Signing Request
+Using our CA certificate we "sign" our private key to confirm that the Pineapple is what we think it is.
 
 ```
 openssl req -new -key server.key -out server.csr
 ```
 
 ### Self-Signed Certificate
+Now we can self-sign our certificate.
 
 ```
 openssl x509 -req -days 3650 -in server.csr -CA ca.pem -CAkey ca.key -set_serial 01 -out server.pem
@@ -131,8 +141,9 @@ openssl x509 -req -days 3650 -in server.csr -CA ca.pem -CAkey ca.key -set_serial
 Note: Don't forget to install the self-made CA certificate (ca.pem) into your browsers certificate store.
 
 ## Nginx Configuration
+Finally we need to edit our Nginx (the web server that runs on the WiFi Pineapple) configuration file.
 
-Change `/etc/nginx/nginx.conf` to:
+Enter `nano /etc/nginx/nginx.conf` into the terminal and make the following changes:
 
 ```
 	server {
@@ -144,10 +155,12 @@ Change `/etc/nginx/nginx.conf` to:
                 ssl_ciphers         HIGH:!aNULL:!MD5;
 ```
 
-Note: don't forget to change the certificate and certificate key to as you've named them.
+Note: Don't forget to change the certificate and certificate key to whatever you named them in the earlier steps.
 
-Then restart nginx
+Now you can restart Nginx with:
 
 ```
 /etc/init.d/nginx restart
 ```
+
+You should now be able to access your WiFi Pineapple at [https://172.16.42.1:1471](https://172.16.42.1:1471) and log in securely over HTTPS!

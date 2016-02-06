@@ -2,6 +2,8 @@
 
 ## USB Wireless Cards
 
+The WiFi Pineapple supports the use of a third wireless radio via the USB port. Listed below are details of various popular USB wireless cards.
+
 | Manufacturer | Radio                  | Chipset            | Power Consumption | Status      |
 |--------------|------------------------|--------------------|-------------------|-------------|
 | ALFA         | AWUS036NHA             | Atheros AR9271     | 100mA Average     | Supported   |

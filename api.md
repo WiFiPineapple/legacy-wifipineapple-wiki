@@ -2,28 +2,28 @@
 
 ## The WiFi Pineapple Mark V Web Interface
 
-The WiFi Pineapple Mark V Web Interface is a dynamic and modular control panel for the WiFi Pineapple. It is mainly made up of modules - known on the Pineapple as infusions. The Web Interface is made up of three major components, listed below.
+The WiFi Pineapple Mark V Web Interface is a dynamic and modular control panel for the WiFi Pineapple. It is predominantly made up of modules - known on the Pineapple as "infusions". The Web Interface is made up of three major components, which will be explored in this article.
 
 ### The notification bar
 
-The notification bar is located at the top of the Web Interface. It is made up of a notification manager, a clock, the logout button and the view picker. As the name says, the notification bar exists primarily to display notifications to users. Notifications can be sent using either PHP JavaScript or simpily a shell command. More details on this can be found in the API Documentation.
+The notification bar is located at the top of the Web Interface. It is made up of a notification manager, a clock, the logout button and the view picker. As the name says, the notification bar exists primarily to display notifications to users. Notifications can be sent using either PHP, JavaScript or BASH. More details on this can be found further down.
 
 ![](imgs/api1.png)
 
 ### The small tiles
-The small tiles are what make up the main visible portion of the Mark V Web Interface. These are widgets to show the current status of each infusion and / or to provide service toggles. Each tile's title can be click to open the corresponding large tiles. Small tiles should be a small view into the infusion.
+The small tiles are what make up the main visible portion of the Mark V Web Interface. These are widgets to show the current status of each infusion and/or to provide service toggles. Each tile's title can be clicked on to open the corresponding large tiles. Small tiles should contain less information than the large tiles (hence the name).
 
 ![](imgs/api2.png)
 
 ### The large tiles
 
-The large tiles are a more in-depth view into each infusion. Large tiles can be used to configure your infusion, view logs or other output, give setup instructions, and much more. Often, the large tile will be divided into tabs to display content in an orderly manner. From firmware version 1.5.0 tabes can be created using a PHP API function.
+The large tiles are a more in-depth view into each infusion. Large tiles can be used to configure your infusion, view logs or other outputs, provide setup instructions, and more. Often, the large tile will be divided into tabs to display content in an orderly manner. From firmware version 1.5.0 tabes can be created using a PHP API function.
 
 ![](imgs/api3.png)
 
 ## WiFi Pineapple Mark V Infusions
 
-The Mark V is expandable through modules, also known as infusions. These modules can be downloaded and installed over-the-air with two clicks from the "Pineapple Bar", a free market place for these modules. Additionally infusions can be created right from the "Pineapple Bar" under the "Bartender" tab. Infusions can be submitted to the [WiFi Pineapple Website](https://wifipineapple.com/) and, if approved, will be available to all Mark V users from the Pineapple Bar.
+Infusions can be downloaded and installed over-the-air with two clicks from the "Pineapple Bar", a free market place for these modules. Additionally infusions can be created right from the "Pineapple Bar" under the "Bartender" tab. Infusions can be submitted to the [WiFi Pineapple Website](https://wifipineapple.com/) and, if approved, will be available to all Mark V users from the Pineapple Bar.
 
 ![](imgs/api4.png)
 
@@ -31,11 +31,11 @@ The Mark V is expandable through modules, also known as infusions. These modules
 
 There are three different types of Web Interface Infusions:
 
-+ **Standard Web Interface Infusion**: A standard Web Interface Infusion is the simplest of infusions. See the Web Interface Infusion structure below for more details
++ **Standard Web Interface Infusion**: A standard Web Interface Infusion is the simplest of infusions. See the Web Interface Infusion structure below for more details.
 
 + **Refreshing Web Interface Infusion**: These are the same as standard Web Interface Infusions except that the small tile will refresh every three seconds. This is particularly useful if information is being displayed which is meant to be refreshed. It also means any other code in the small tile is executed every 3 seconds.
 
-+ **Web Interface Infusion with CLI component**: To create a Web Interface Infusion with a CLI component, a normal Web Interface infusion (standard / refreshing) must be created first. Once created, a folder named "executable" must be created inside the root of the infusion. Now, a file named "executable" must be created inside the newly created folder. This file may be an executable of any type the WiFi Pineapple can handle (bash, python, binary executable, etc). It is important to note that the executable file must have executable permissions (`chmod +x`). For more details on CLI infusions and how they work, please see the appropriate section in this document.
++ **Web Interface Infusion with CLI component**: To create a Web Interface Infusion with a CLI component, a normal Web Interface infusion (standard / refreshing) must be created first. Once created, a folder named "executable" must be created inside the root of the infusion. Then, a file named "executable" must be created inside the newly created folder. This file may be an executable of any type the WiFi Pineapple can handle (BASH, Python, PHP, etc. Please note that  binary executables are discouraged.). It is important to note that the executable file must have executable permissions (`chmod +x`). For more details on CLI infusions and how they work, please see the appropriate section further down.
 
 ### Web Interface Infusion Structure
 
@@ -53,7 +53,7 @@ By default, they are made up of four files:
   + This PHP file should house your PHP functions which you want to use in your infusion.
   + This should be the place you submit any GET or POST requests (using AJAX) to from your large or small tiles.
 + **handler.php**
-  + This PHP file is automatically generated and should not be modified unless the infusion version is being changed. This is currently the only way to increment the infusion version and is therefore required when the infusion is being submitted to the WiFi Pineapple Bar through the [WiFi Pineapple Website](https://wifipineapple.com/).
+  + This PHP file is automatically generated and should not be modified unless the infusion version is being changed. This is the only way to increment the infusion version and is therefore required when the infusion is being submitted to the WiFi Pineapple Bar through the [WiFi Pineapple Website](https://wifipineapple.com/).
 
 ### CLI Only Infusions
 
@@ -62,9 +62,9 @@ CLI Only Infusions do not have a Web Interface frontend. Rather, they are extens
 The general structure of a CLI infusion is as follows:
 
 + **cli_handler.php**
-  + This file is automatically generated and should not be modified unless the infusion version is being changed. This is currently the only way to increment the infusion version and is therefore required when the infusion is submitted to the WiFi Pineapple Bar through the [WiFi Pineapple Website](https://wifipineapple.com/).
+  + This file is automatically generated and should not be modified unless the infusion version is being changed. This is the only way to increment the infusion version and is therefore required when the infusion is submitted to the WiFi Pineapple Bar through the [WiFi Pineapple Website](https://wifipineapple.com/).
 + **executable/executable**
-  + This file is where the actual infusion lives. It may be in the form of an interpreted executable (bash, php, python) or a binary executable. In the case of an interpreted executable, the first line of this file must use a shebang to point to the interpreter, for example `#!/usr/bin/python`.
+  + This file is where the actual infusion lives. It may be in the form of an interpreted executable (BASH, PHO, Python) or a binary executable (again, binaries are discouraged). In the case of an interpreted executable, the first line of this file must use a shebang to point to the interpreter, for example `#!/usr/bin/python`.
 
 ## WiFi Pineapple CLI
 
@@ -188,7 +188,7 @@ This will set a variable named "$pineapple" up to be with the Pineapple API obje
 
 ## JavaScript API Functions
 
-The JavaScript API is accessible from any small or large tile (and any included content therein). There is no need to initialize this API as the following functions are declared globally throughout the Web Interface.
+The JavaScript API is accessible from any small or large tile (and any content included therein). There is no need to initialize this API as the following functions are declared globally throughout the Web Interface.
 
 ```javascript
 /**
