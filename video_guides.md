@@ -1,6 +1,6 @@
 # Video Guides
 
-## Guides
+## General Guides
 
 + [Wardriving with Wifi Pineapple Mark V running Kismet](https://www.youtube.com/watch?v=ZDiByMQ7Wb8)
 + [Pineapple Wifi Intro and Reconnaissance View](https://www.youtube.com/watch?v=ttDQQqyVaIA)
@@ -11,7 +11,7 @@
 + [WiFi Pineapple, Karma, sslstrip and Captive Portals](https://www.youtube.com/watch?v=vuzB8BvoRx4)
 
 
-## Infusion Guides
+## Infusion-Specific Guides
 
 + [Evil Portal 2.3 - Fix all the bugs!](https://www.youtube.com/watch?v=8D_MkqkeoWw&list=UUAY2nSvrK_8S91ub9j26csA)
 + [Collecting Browser Data With Evil Portal and Get](https://www.youtube.com/watch?v=puOP_0feBwY&list=UUAY2nSvrK_8S91ub9j26csA)
