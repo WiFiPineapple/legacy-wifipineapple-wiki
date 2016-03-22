@@ -14,9 +14,8 @@
 
 [Development]()
 
-  * [API](api.md)
   * [Creating Modules](creating_modules.md)
-  * [Build Guide](build_guide.md)
+  * [API](api.md)
 
 [Troubleshooting](troubleshooting.md)
 
