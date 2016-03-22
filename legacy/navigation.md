@@ -1,6 +1,8 @@
 # WiFi Pineapple Wiki
 
-[Home](index.md)
+[Home](/)
+
+[Legacy Home](index.md)
 
 [Start Here]()
 
