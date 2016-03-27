@@ -8,7 +8,13 @@ Unlike the old web interface, the back end of the new interface has been decoupl
 This is set to the action you wish to perform. For instance, this could be `"action": "listNotifications"` or `"action": "getRandomRollRolls"`.
 ### Any other parameters are optional and are specific to the module and action you are requesting
 Many actions do not require additional parameters. For instance, `{"system": "notifications", "action": "listNotifications"}` will return a list of all of the current unread notifications (as JSON). However, there are some functions, such as `addNotification`, that require additional parameters (in this case `message`). To create a new notifications, one would use the following request:
-`{"system": "notifications", "action": "addNotification", "message": "Hello World!"}`
+```
+{
+  "system": "notifications",
+  "action": "addNotification",
+  "message": "Hello World!"
+}
+```
 
 ## Authentication
 There are a couple ways to authenticate with the pineapple. Requests sent via the web interface use a PHPSESSID cookie as well as an X-XSRF-TOKEN header. The pineapple will verify that the session is valid and logged in and that the XSRF token matches the one generated at the start of the session. If both of these conditions are met, the request is routed. An example of a request sent by chrome is as follows:
@@ -29,4 +35,13 @@ Cookie: PHPSESSID=cfd6b0bb983666362cae311c457d1d34; XSRF-TOKEN=b01c5046faa2f8ffb
 
 {"system":"notifications","action":"listNotifications"}
 ```
-This type of authentication is awkward and clumbsy to implement programmatically. Because of this, we have added a new way to authenticate with the WiFi Pineapple: API tokens. Though API tokens are supported by default, the pineapple is shipped without any valid tokens. The process of generating API tokens is simplified by the [API Tokens module](https://github.com/735tesla/Pineapple-API-Tokens-Module).
+This type of authentication is awkward and clumbsy to implement programmatically. Because of this, we have added a new way to authenticate with the WiFi Pineapple: API tokens. Though API tokens are supported by default, the pineapple is shipped without any valid tokens. The process of generating API tokens is simplified by the [API Tokens module](https://github.com/735tesla/Pineapple-API-Tokens-Module). After a token has been generated, it can be sent as an additional parameter. To use an API token, simply add an additional `apiToken` key to the request body. For example, to add a notification, one could send the following JSON request:
+```
+{
+  "system": "notifications",
+  "action": "addNotification",
+  "message": "Hello World!",
+  "apiToken": "7365626b696e6e652063616e7420636f6465202724ef6b5d7ac0b800cc83d474e8e007"
+}
+```
+If the `apiToken` parameter is valid, the request will be route; otherwise an error will be returned.
