@@ -45,3 +45,45 @@ This type of authentication is awkward and clumbsy to implement programmatically
 }
 ```
 If the `apiToken` parameter is valid, the request will be route; otherwise an error will be returned.
+
+## Modules
+### Advanced
+#### Description
+#### Supported Actions
+### Clients
+#### Description
+#### Supported Actions
+### Configuration
+#### Description
+#### Supported Actions
+### Dashboard
+#### Description
+#### Supported Actions
+### Filters
+#### Description
+#### Supported Actions
+### Logging
+#### Description
+#### Supported Actions
+### ModuleManager
+#### Description
+#### Supported Actions
+### Networking
+#### Description
+#### Supported Actions
+### PineAP
+#### Description
+#### Supported Actions
+### Recon
+#### Description
+#### Supported Actions
+### Reporting
+#### Description
+#### Supported Actions
+### Tracking
+#### Description
+#### Supported Actions
+
+## Community Python API
+
+## Further Information
