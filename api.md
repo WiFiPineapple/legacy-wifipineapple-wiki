@@ -9,3 +9,24 @@ This is set to the action you wish to perform. For instance, this could be `"act
 ### Any other parameters are optional and are specific to the module and action you are requesting
 Many actions do not require additional parameters. For instance, `{"system": "notifications", "action": "listNotifications"}` will return a list of all of the current unread notifications (as JSON). However, there are some functions, such as `addNotification`, that require additional parameters (in this case `message`). To create a new notifications, one would use the following request:
 `{"system": "notifications", "action": "addNotification", "message": "Hello World!"}`
+
+## Authentication
+There are a couple ways to authenticate with the pineapple. Requests sent via the web interface use a PHPSESSID cookie as well as an X-XSRF-TOKEN header. The pineapple will verify that the session is valid and logged in and that the XSRF token matches the one generated at the start of the session. If both of these conditions are met, the request is routed. An example of a request sent by chrom is as follows:
+```
+POST /api/ HTTP/1.1
+Host: 172.16.42.1:1471
+Connection: keep-alive
+Content-Length: 55
+Accept: application/json, text/plain, */*
+Origin: http://172.16.42.1:1471
+X-XSRF-TOKEN: b01c5046faa2f8ffbed6f2fdd90a5605e6c505e3
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36
+Content-Type: application/json;charset=UTF-8
+Referer: http://172.16.42.1:1471/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.8
+Cookie: PHPSESSID=cfd6b0bb983666362cae311c457d1d34; XSRF-TOKEN=b01c5046faa2f8ffbed6f2fdd90a5605e6c505e3
+
+{"system":"notifications","action":"listNotifications"}
+```
+This type of authentication is awkward and clumbsy to implement programmatically. Because of this, we have added a new way to authenticate with the WiFi Pineapple: API tokens.
