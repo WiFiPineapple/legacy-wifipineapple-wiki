@@ -49,7 +49,6 @@ If the `apiToken` parameter is valid, the request will be route; otherwise an er
 ## Modules
 ### Advanced
 #### Description
-#### Supported Actions
 Action|Description|Parameters
 ------|-----------|----------
 `getResources`|Returns a JSON array of disk and memory usage|_none_
@@ -66,37 +65,26 @@ Action|Description|Parameters
 `getCurrentVersion`||
 ### Clients
 #### Description
-#### Supported Actions
 ### Configuration
 #### Description
-#### Supported Actions
 ### Dashboard
 #### Description
-#### Supported Actions
 ### Filters
 #### Description
-#### Supported Actions
 ### Logging
 #### Description
-#### Supported Actions
 ### ModuleManager
 #### Description
-#### Supported Actions
 ### Networking
 #### Description
-#### Supported Actions
 ### PineAP
 #### Description
-#### Supported Actions
 ### Recon
 #### Description
-#### Supported Actions
 ### Reporting
 #### Description
-#### Supported Actions
 ### Tracking
 #### Description
-#### Supported Actions
 
 ## Community Python API
 
