@@ -84,6 +84,14 @@ Action|Description|Parameters
 `updateRoute`|Updates the routing table|<ul><li>`routeIP`<ul><li>IP Address for the route</li></ul></li></ul><ul><li>`routeInterface`<ul><li>Interface for the route</ul></li>
 `getAdvancedData`|Returns the hostname and ifconfig|_none_
 `setHostname`|Sets the hostname for the Pineapple|<ul><li>`hostname`<ul><li>String for the hostname</li></ul></li></ul>
+`resetWirelessConfig`|Resets the Wireless Configuration for the Pineapple|_none_
+`getInterfaceList`|Returns an array of available network interfaces|_none_
+`saveAPConfig`|Writes properties to the AP configuration|<ul><li>`selectedChannel`<ul><li>Channel for the AP to operate on</li></ul></li></ul><ul><li>`openSSID`<ul><li>String for the SSID of the Open Access Point</li></ul></li></ul><ul><li>`hideOpenAP`<ul><li>Boolean to hide the Open Access Point or not</li></ul></li></ul><ul><li>`managementSSID`<ul><li>String for the SSID of the Management AP</li></ul></li></ul><ul><li>`managementKey`<ul><li>string for the WPA2 passphrase for the Management AP</li></ul></li></ul><ul><li>`disableManagementAP`<ul><li>Boolean to disable the Management AP or not</li></ul></li></ul>
+`getAPConfig`|Returns an array of properties from the access point configuration.|_none_
+`getMacData`|Returns the MAC Addresses of each of the wireless interfaces|_none_
+`setMac`|Sets the MAC address for a specified interface|<ul><li>`random`<ul><li>Boolean to set the MAC address as a random value.</li></ul></li></ul><ul><li>`interface`<ul><li>The interface you want to change the MAC address of</li></ul></li></ul><ul><li>`mac`<ul><li>The new MAC address of the interface</li></ul></li></ul>
+`resetMac`|Reset the specified interface's MAC address to the factory default.|<ul><li>`interface`<ul><li>The interface to reset</li></ul></li></ul>
+
 ### PineAP
 #### Description
 ### Recon
