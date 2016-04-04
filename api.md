@@ -77,6 +77,10 @@ Action|Description|Parameters
 #### Description
 ### Networking
 #### Description
+Action|Description|Parameters
+------|-----------|----------
+`getRoutingTable`|Returns the routing table of the Pineapple|_none_
+`restartDNS`|Restarts the DNS service on the Pineapple|_none_
 ### PineAP
 #### Description
 ### Recon
