@@ -60,7 +60,7 @@ Action|Description|Parameters
 `saveCSS`|Overwrites the contents of main.css with a string|<ul><li>`css`<ul><li>A string to be written to `/pineapple/css/main.css`</li></ul></li></ul>
 `checkForUpgrade`|Fetches the list of upgrades and the description of each|_none_
 `downloadUpgrade`|Upgrades the pineapple to a specified firmare version (see output of `checkForUpgrades` and `getCurrentVersion`)|<ul><li>`version`<ul><li>The version to which the pineapple should be upgraded</li></ul></li></ul>
-`getDownloadStatus`|Tells whether a firmware download is complete or in progress and how many bytes have been downloaded|_none
+`getDownloadStatus`|Tells whether a firmware download is complete or in progress and how many bytes have been downloaded|_none_
 `performUpgrade`|Upgrades using the image in /tmp/upgrade.bin|_none_
 `getCurrentVersion`|Returns the current firmware version on the pineapple|_none_
 ### Clients
