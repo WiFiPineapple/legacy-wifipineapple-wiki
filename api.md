@@ -53,16 +53,16 @@ Action|Description|Parameters
 ------|-----------|----------
 `getResources`|Returns a JSON array of disk and memory usage|_none_
 `dropCaches`|Clears system caches|_none_
-`getUSB`|Returns a list of USB devices connected ot the pineapple|_none
+`getUSB`|Returns a list of USB devices connected ot the pineapple|_none_
 `getFstab`|Returns the contents of `/etc/config/fstab`|_none_
 `getCSS`|Returns the contents of main.css|_none_
 `saveFstab`|Overwrites `/etc/config/fstab` with a string|<ul><li>`fstab`<ul><li>A string to be written to `/etc/config/fstab`</li></ul></li></ul>
 `saveCSS`|Overwrites the contents of main.css with a string|<ul><li>`css`<ul><li>A string to be written to `/pineapple/css/main.css`</li></ul></li></ul>
 `checkForUpgrade`|Fetches the list of upgrades and the description of each|_none_
-`downloadUpgrade`|Upgrades the pineapple to a specified firmare version (see output of `checkForUpgrades`)|<ul><li>`version`<ul><li>The version to which the pineapple should be upgraded</li></ul></li></ul>
-`getDownloadStatus`||
-`performUpgrade`||
-`getCurrentVersion`||
+`downloadUpgrade`|Upgrades the pineapple to a specified firmare version (see output of `checkForUpgrades` and `getCurrentVersion`)|<ul><li>`version`<ul><li>The version to which the pineapple should be upgraded</li></ul></li></ul>
+`getDownloadStatus`|Tells whether a firmware download is complete or in progress and how many bytes have been downloaded|_none
+`performUpgrade`|Upgrades using the image in /tmp/upgrade.bin|_none_
+`getCurrentVersion`|Returns the current firmware version on the pineapple|_none_
 ### Clients
 #### Description
 ### Configuration
