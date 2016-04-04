@@ -50,6 +50,20 @@ If the `apiToken` parameter is valid, the request will be route; otherwise an er
 ### Advanced
 #### Description
 #### Supported Actions
+Action|Description|Parameters
+------|-----------|----------
+`getResources`|Returns a JSON array of disk and memory usage|_none_
+`dropCaches`|Clears system caches|_none_
+`getUSB`|Returns a list of USB devices connected ot the pineapple|_none
+`getFstab`|Returns the contents of `/etc/config/fstab`|_none_
+`getCSS`||
+`saveFstab`|Overwrites `/etc/config/fstab` with a string|<ul><li>`fstab`<li>item2</li><ul><li>A string to be written to `/etc/config/fstab`</li></ul></li></ul>
+`saveCSS`||
+`checkForUpgrade`||
+`downloadUpgrade`||
+`getDownloadStatus`||
+`performUpgrade`||
+`getCurrentVersion`||
 ### Clients
 #### Description
 #### Supported Actions
