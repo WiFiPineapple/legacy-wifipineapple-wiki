@@ -77,6 +77,15 @@ Action|Description|Parameters
 #### Description
 ### Networking
 #### Description
+The Networking module API allows you to interface with the networking side of the WiFi Pineapple without having to write your own functions to manage interfaces, the DNS, and the routing table. As described above, you can use these actions in your own module like so:
+```
+{
+    "module": "Networking",
+    "action": "setHostname",
+    "hostname": "Pineapple"
+}
+```
+
 Action|Description|Parameters
 ------|-----------|----------
 `getRoutingTable`|Returns the routing table of the Pineapple|_none_
