@@ -82,6 +82,8 @@ Action|Description|Parameters
 `getRoutingTable`|Returns the routing table of the Pineapple|_none_
 `restartDNS`|Restarts the DNS service on the Pineapple|_none_
 `updateRoute`|Updates the routing table|<ul><li>`routeIP`<ul><li>IP Address for the route</li></ul></li></ul><ul><li>`routeInterface`<ul><li>Interface for the route</ul></li>
+`getAdvancedData`|Returns the hostname and ifconfig|_none_
+`setHostname`|Sets the hostname for the Pineapple|<ul><li>`hostname`<ul><li>String for the hostname</li></ul></li></ul>
 ### PineAP
 #### Description
 ### Recon
