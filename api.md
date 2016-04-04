@@ -56,10 +56,10 @@ Action|Description|Parameters
 `getUSB`|Returns a list of USB devices connected ot the pineapple|_none
 `getFstab`|Returns the contents of `/etc/config/fstab`|_none_
 `getCSS`|Returns the contents of main.css|_none_
-`saveFstab`|Overwrites `/etc/config/fstab` with a string|<ul><li>`fstab`<li>item2</li><ul><li>A string to be written to `/etc/config/fstab`</li></ul></li></ul>
-`saveCSS`|Overwrites the contents of main.css with a string|<ul><li>`css`<li>item2</li><ul><li>A string to be written to `/pineapple/css/main.css`</li></ul></li></ul>
+`saveFstab`|Overwrites `/etc/config/fstab` with a string|<ul><li>`fstab`<ul><li>A string to be written to `/etc/config/fstab`</li></ul></li></ul>
+`saveCSS`|Overwrites the contents of main.css with a string|<ul><li>`css`<ul><li>A string to be written to `/pineapple/css/main.css`</li></ul></li></ul>
 `checkForUpgrade`|Fetches the list of upgrades and the description of each|_none_
-`downloadUpgrade`|Upgrades the pineapple to a specified firmare version (see output of `checkForUpgrades`)|<ul><li>`version`<li>item2</li><ul><li>The version to which the pineapple should be upgraded</li></ul></li></ul>
+`downloadUpgrade`|Upgrades the pineapple to a specified firmare version (see output of `checkForUpgrades`)|<ul><li>`version`<ul><li>The version to which the pineapple should be upgraded</li></ul></li></ul>
 `getDownloadStatus`||
 `performUpgrade`||
 `getCurrentVersion`||
