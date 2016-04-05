@@ -70,5 +70,6 @@ Our HTML code should now look like this:
         {{hello}}
     </div>
 </div>
+```
 
 #### module.js
