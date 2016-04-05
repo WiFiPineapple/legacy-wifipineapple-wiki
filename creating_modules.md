@@ -34,9 +34,6 @@ You can create the module files on the WiFi Pineapple with ease using the [Modul
 
 After downloading the module, enter the correct information into the Name, Description, Version and Author fields and click "Generate". Your module will then be ready to download and edit. Open the module in your favorite text editor.
 
-### An example module
-This example will teach you how to make requests, obtain data, and return it back to the HTML.
-
 #### module.html
 The WiFi Pineapple modules make use of Bootstrap to provide a good mobile viewing experience and a clean look. Module developers are encouraged to make use of Bootstrap components, such as responsive tables and the grid system. To learn more about Bootstrap, visit the [Bootstrap Website](https://getbootstrap.com).
 
