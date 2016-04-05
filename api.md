@@ -124,8 +124,8 @@ Action|Description|Parameters
 ------|-----------|----------
 `getPool`|Returns an array of the SSIDs in PineAP's pool|_none_
 `clearPool`|Clears the PineAP pool|_none_
-`addSSID`|Adds an SSID to the pool|<ul><li>ssid<ul><li>The SSID string to add</li></ul></li>
-`removeSSID`|Removes an SSID from the pool|<ul><li>ssid<ul><li>The SSID string to add</li></ul></li>
+`addSSID`|Adds an SSID to the pool|<ul><li>`ssid`<ul><li>The SSID string to add</li></ul></li>
+`removeSSID`|Removes an SSID from the pool|<ul><li>`ssid`<ul><li>The SSID string to remove</li></ul></li>
 `setPineAPSettings`|Update PineAP's settings|<ul> <li>`settings` <ul> <li>A dictionary with setting key/value pairs <ul> <li>`allowAssociations` <ul> <li>Whether clients should be allowed to associate to the pineapple</li> </ul> </li> <li>`logProbes` <ul> <li>Whether to log probe requests</li> </ul> </li> <li>`logAssociations` <ul> <li>Whether to log associations</li> </ul> </li> <li>`beaconResponses` <ul> <li>Whether to send beacon responses</li> </ul> </li> <li>`captureSSIDs` <ul> <li>Whether to add sniffed SSIDs to the pool</li> </ul> </li> <li>`broadcastSSIDs` <ul> <li>Whether to broadcast the SSID pool</li> </ul> </li> <li>`beaconInterval` <ul> <li>The beacon interval- must be one of "low", "normal" or "aggressive"</li> </ul> </li> <li>`responseInterval` <ul> <li>The response interval- must be one of "low", "normal" or "aggressive"</li> </ul> </li> <li>`targetMAC` <ul> <li>The MAC to target with responses</li> </ul> </li> <li>`sourceMAC` <ul> <li>The MAC PineAP should spoof</li> </ul> </li> </ul> </li> </ul> </li></ul>
 `getPineAPSettings`|Returns a dictionary with all the current PineAP settings|_none_
 `enable`|Enables PineAP|_none_
