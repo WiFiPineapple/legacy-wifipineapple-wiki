@@ -16,14 +16,14 @@ A basic module will request information through AngularJS to PHP, and then the P
 +-------------------+         +--------------+         +-----------+         +------+
 ```
 
-A module will contain at least four files required to function. A `module.html` that contains the HTML for the module, A `module.info` that contains the name, description, version and author of the module in JSON format, a `module.js` file inside of the `js/` folder that contains the AngularJS, and finally a `module.php` file inside of the `php/` folder. It is structured like this:
+A module will contain at least four files required to function. A `module.html` that contains the HTML for the module, A `module.info` that contains the name, description, version and author of the module in JSON format, a `module.js` file inside of the `js/` folder that contains the AngularJS, and finally a `module.php` file inside of the `api/` folder. It is structured like this:
 ```
 .
 ├── js
 │   └── module.js
 ├── module.html
 ├── module.info
-└── php
+└── api
     └── module.php
 ```
 
