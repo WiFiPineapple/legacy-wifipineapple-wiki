@@ -17,6 +17,8 @@ Many actions do not require additional parameters. For instance, `{"system": "no
 ```
 
 ## Authentication
+_(Please note that authentication not required when using the angular module api due to the fact that client side module components are loaded after the user authenticates their browser)_
+
 There are a couple ways to authenticate with the pineapple. Requests sent via the web interface use a PHPSESSID cookie as well as an X-XSRF-TOKEN header. The pineapple will verify that the session is valid and logged in and that the XSRF token matches the one generated at the start of the session. If both of these conditions are met, the request is routed. An example of a request sent by chrome is as follows:
 ```
 POST /api/ HTTP/1.1
@@ -49,6 +51,13 @@ If the `apiToken` parameter is valid, the request will be route; otherwise an er
 ## Modules
 ### Advanced
 #### Description
+The advanced module simplifies some more advanced processes like performing system upgrades and clearing system caches. FOr example, the following will clear the pineapple's caches:
+```
+{
+  "module": "Advanced",
+  "action": "dropCaches"
+}
+```
 Action|Description|Parameters
 ------|-----------|----------
 `getResources`|Returns a JSON array of disk and memory usage|_none_
@@ -103,6 +112,7 @@ Action|Description|Parameters
 
 ### PineAP
 #### Description
+
 ### Recon
 #### Description
 ### Reporting
