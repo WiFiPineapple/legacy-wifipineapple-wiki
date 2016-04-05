@@ -61,7 +61,7 @@ Your code should now look like this:
 </div>
 ```
 
-Finally, we will use an expression called `hello`. This is done with `{{hello}}`. Later, we will use this expression to display text from our PHP. You can learn more at [AngularJS - Scopes](https://docs.angularjs.org/guide/expression).
+Finally, we will use an expression called `hello`. This is done with `{{hello}}`. Later, we will use this expression to display text from our PHP. You can learn more at [AngularJS - Expression](https://docs.angularjs.org/guide/expression).
 
 Our HTML code should now look like this:
 ```
