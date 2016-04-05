@@ -17,7 +17,7 @@ Many actions do not require additional parameters. For instance, `{"system": "no
 ```
 
 ## Authentication
-_(Please note that authentication not required when using the angular module api due to the fact that client side module components are loaded after the user authenticates their browser)_
+_(Please note that extra authentication parameters are not required when using the angular module api due to the fact that client side module components are loaded after the user authenticates their browser)_
 
 There are a couple ways to authenticate with the pineapple. Requests sent via the web interface use a PHPSESSID cookie as well as an X-XSRF-TOKEN header. The pineapple will verify that the session is valid and logged in and that the XSRF token matches the one generated at the start of the session. If both of these conditions are met, the request is routed. An example of a request sent by chrome is as follows:
 ```
