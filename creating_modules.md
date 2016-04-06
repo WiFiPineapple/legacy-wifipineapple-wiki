@@ -67,7 +67,7 @@ Our HTML code should now look like this:
 ```
 <div class="row">
     <div ng-controller="ExampleController" class="col-md-12">
-        {{hello}}
+        {{ hello }}
     </div>
 </div>
 ```
