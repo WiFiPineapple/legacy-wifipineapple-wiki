@@ -78,7 +78,7 @@ If USB Tethering is supported by the Android device, when enabled it will enumer
 Since the WiFi Pineapple will become a client on the Android devices internal network, it is possible to access the WiFi Pineapple web interface from the Android device if the WiFi Pineapple's IP address is known.
 
 For convenience in accessing the USB Tethering setting, as well as discovering the IP address of the WiFi Pineapple on the Android devices network and browsing to the web interface, a [WiFi PIneapple Connector app for Android is provided free of charge from Google Play](
-https://play.google.com/store/apps/details?id=org.hak5.wifipineappleconnector).
+https://play.google.com/store/apps/details?id=org.hak5.pineappleconnector).
 
 When launching the WiFi Pineapple Connector android app, you will be prompted to configure tethering. Tapping Configure will jump to the systems Tethering and Portable Hot Spot settings menu, if available. Tap to enable USB Tethering, then tap back. Once enabled, the WiFi Pineapple Connector app will wait for a network connection from the WiFi Pineapple indicating its IP address on the Android devices internal network. Once discovered, the browser will automatically load the web interface.
 

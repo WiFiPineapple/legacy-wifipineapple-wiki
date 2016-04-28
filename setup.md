@@ -22,7 +22,7 @@ We advise connecting the WiFi Pineapple NANO to a stable USB power supply capabl
 1. Download the latest WiFi Pineapple NANO firmware
     https://www.wifipineapple.com/downloads
 2. Install the WiFi Pineapple Connector app for Android
-    https://play.google.com/store/apps/details?id=org.hak5.wifipineappleconnector
+    https://play.google.com/store/apps/details?id=org.hak5.pineappleconnector
 3. Power on the NANO using the supplied USB Y cable
 4. Connect the NANO to the Android with a USB data cable
 5. Open the WiFi Pineapple Connector Android app
@@ -47,7 +47,7 @@ We advise connecting the WiFi Pineapple TETRA to a stable power supply capable o
 1. Download the latest WiFi Pineapple TETRA firmware
     https://www.wifipineapple.com/downloads
 2. Install the WiFi Pineapple Connector app for Android
-    https://play.google.com/store/apps/details?id=org.hak5.wifipineappleconnector
+    https://play.google.com/store/apps/details?id=org.hak5.pineappleconnector
 3. Power on the TETRA using the supplied USB Y cable
 4. Connect the TETRA to the Android with a USB data cable
 5. Open the WiFi Pineapple Connector Android app
