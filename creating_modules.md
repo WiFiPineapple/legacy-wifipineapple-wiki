@@ -73,4 +73,36 @@ Our HTML code should now look like this:
 ```
 
 #### module.js
-# TODO: Continue
+The module.js contains the AngularJS for your module. As described above, this is the middle "layer" between the HTML and PHP. AngularJS is a Javascript framework created by Google, and allows you to create responsive and dynamic webpages. This is useful with the WiFi Pineapple interface because it lets us update the HTML with changing content.
+
+To start, we can use a built in API function, `registerController()`. This allows us to easily create controllers for our module. An empty controller would look like this:
+```
+registerController("ExampleController", ['$api', '$scope', function($api, $scope) {
+
+}])
+```
+Here we register the name of the controller, `"ExampleController"`. Then we include our dependencies, usually the WiFi Pineapple API, with `$api` and then the scope of your module, with `$scope`.
+
+Now we will add a variable inside our scope called `hello`, like so:
+```
+registerController("ExampleController", ['$api', '$scope', function($api, $scope) {
+    $scope.text = "Hello World!";
+}])
+```
+
+Our HTML will now output "Hello World!".
+
+We can however get dynamic data, passed from our PHP. To do this, we can use the `$api.request()` function:
+```
+registerController("ExampleController", ['$api', '$scope', function($api, $scope) {
+    $api.request({
+        module: 'ExampleModule',
+        action: 'getHello'
+    }, function(response) {
+        $scope.text = response.text;
+    });
+}])
+```
+This will send a request to our module.php, and take its response and set `$scope.text` to `response.text`.
+
+#### module.php
