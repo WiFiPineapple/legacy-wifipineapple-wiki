@@ -106,3 +106,52 @@ registerController("ExampleController", ['$api', '$scope', function($api, $scope
 This will send a request to our module.php, and take its response and set `$scope.text` to `response.text`.
 
 #### module.php
+The module.php contains all PHP code and can directly interface with other modules, talk to the Javascript and access the WiFi Pineapple API. In this guide, we will finish our Example Module by making it reply to our AngularJS request and return a string containing "Hello World!".
+
+To start, we must extend the `Module` class inside of the `pineapple` namespace. We must then add the method to handle our requests.:
+```
+<?php namespace pineapple;
+
+class ExampleModule extends Module
+{
+    public function route()
+    {
+        switch ($this->request->action) {
+            case 'getHello':
+                $this->hello();
+                break;
+            }
+    }
+}
+```
+
+This snippet of code will loop over every action it receieves from the Javascript. In our case it is `getHello`. Once it finds `getHello` it will execute a function called `hello()` that we will define next. After the route() function:
+```
+private function hello()
+{
+    $this->response = array('text' => "Hello World");
+}
+```
+
+Once this function is executed it will simply create an array with a property called text equaling "Hello World". All together, your code will look like this:
+```
+<?php namespace pineapple;
+
+class ExampleModule extends Module
+{
+    public function route()
+    {
+        switch ($this->request->action) {
+            case 'getHello':
+                $this->hello();
+                break;
+            }
+    }
+
+    private function hello()
+    {
+        $this->response = array('text' => "Hello World");
+    }
+}
+```
+Our PHP is now complete, and when the HTML is loaded, it will now display the "Hello World" string from your module.php.
