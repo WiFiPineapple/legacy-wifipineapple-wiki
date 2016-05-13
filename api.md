@@ -81,6 +81,23 @@ Action|Description|Parameters
 #### Description
 ### Filters
 #### Description
+The filters module has API that will allow you manage all aspects of the Filter module externally, such as getting client data or adding clients. It is used like so:
+```
+{
+    "module": "Filters",
+    "action": "getClientData"
+}
+```
+Action|Description|Parameters
+------|-----------|----------
+`getClientData`|Return an array of client filters. (Mode and Filters)|_none_
+`getSSIDData`|Return an array of SSID filters (Mode and Filters)|_none_
+`toggleClientMode`|Toggle between whitelist and blacklist mode for client filtering|_none_
+`toggleSSIDMode`|Toggle between whitelist and blacklist mode for SSID filtering|_none_
+`addClient`|Add client to filter|<ul><li>`mac`<ul><li>MAC address of client</ul></li></ul></li>
+`addSSID`|Add SSID to filter|<ul><li>`ssid`<ul><li>SSID of Access Point</ul></li></ul></li>
+`removeClient`|Remove client from filter|<ul><li>`mac`<ul><li>MAC address of client</ul></li></ul></li>
+`removeSSID`|Remove SSID from filter|<ul><li>`ssid`<ul><li>SSID of Access Point</ul></li></ul></li>
 ### Logging
 #### Description
 The Logging module provides easy access to the syslog, dmesg, PineAP and Reporting logs. To use these API functions, send your api request with the "module" set to "Logging":
