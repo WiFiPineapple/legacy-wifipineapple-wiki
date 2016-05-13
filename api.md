@@ -1,4 +1,5 @@
 # WiFi Pineapple Module API
+#TODO: Add available destinations for ModuleManager.
 
 ## Introduction
 Unlike the old web interface, the back end of the new interface has been decoupled from the front end. All requests to perform system actions are sent as POSTs to `/api/`. The content of the POST is JSON and contains a minimum of two parameters.
@@ -97,6 +98,7 @@ Action|Description|Parameters
 ------|-----------|----------
 `getAvailableModules`|Return an array of modules available for download|_none_
 `getInstalledModules`|Return an array of modules currently installed|_none_
+`installModule`|Install a module|<ul><li>`moduleName`<ul><li>Name of module to install</li></ul></li></ul><ul><li>`destination`<ul><li>Destination of module.</li></ul>
 ### Networking
 #### Description
 The Networking module API allows you to interface with the networking side of the WiFi Pineapple without having to write your own functions to manage interfaces, the DNS, and the routing table. As described above, you can use these actions in your own module like so:
