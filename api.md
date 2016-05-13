@@ -52,7 +52,7 @@ If the `apiToken` parameter is valid, the request will be route; otherwise an er
 ## Modules
 ### Advanced
 #### Description
-The advanced module simplifies some more advanced processes like performing system upgrades and clearing system caches. FOr example, the following will clear the pineapple's caches:
+The advanced module simplifies some more advanced processes like performing system upgrades and clearing system caches. For example, the following will clear the pineapple's caches:
 ```
 {
   "module": "Advanced",
@@ -79,6 +79,19 @@ Action|Description|Parameters
 #### Description
 ### Dashboard
 #### Description
+You can use the Dashboards API to return useful values such as CPU usage, total SSIDs, SSIDs discovered this session and uptime. For example, the following will get the bulletins:
+```
+{
+  "module": "Dashboard",
+  "action": "getBulletins"
+}
+```
+Action|Description|Parameters
+------|-----------|----------
+`getOverviewData`|Return an array containing `cpu`, `uptime`, `clients`, `SSIDs` and `newSSIDs`.|_none_
+`getLandingPageData`|Return all landing page browser stats|_none_
+`getBulletins`|Return bulletins|_none_
+
 ### Filters
 #### Description
 The filters module has API that will allow you manage all aspects of the Filter module externally, such as getting client data or adding clients. It is used like so:
