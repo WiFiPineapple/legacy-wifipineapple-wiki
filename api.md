@@ -283,6 +283,4 @@ Action|Description|Parameters
 `addMac`|Adds a MAC to tracking|<ul><li>`mac`<ul><li>The MAC address to start tracking</li></ul></li>
 `removeMac`|Removes a MAC from tracking|<ul><li>`mac`<ul><li>The MAC address to stop tracking</li></ul></li>
 ## Community Python API
-
-
-## Further Information
+A community python API wrapper exists [here](https://github.com/735tesla/python-pineapple) but documentation is still in progress.
