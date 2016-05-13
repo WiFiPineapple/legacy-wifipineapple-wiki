@@ -83,6 +83,22 @@ Action|Description|Parameters
 #### Description
 ### Logging
 #### Description
+The Logging module provides easy access to the syslog, dmesg, PineAP and Reporting logs. To use these API functions, send your api request with the "module" set to "Logging":
+```
+{
+    "module": "Logging",
+    "action": "getSyslog",
+}
+```
+Action|Description|Parameters
+------|-----------|----------
+`getSyslog`|Return the system log in full|_none_
+`getDmesg`|Return the kernel log in full|_none_
+`getReportingLog`|Return the log from the Reporting module|_none_
+`getPineapLog`|Return the log from PineAP|_none_
+`clearPineapLog`|Clear the PineAP log file|_none_
+`getPineapLogLocation`|Return the location of the PineAP log|_none_
+`setPineapLogLocation`|Set the location for PineAP logging|<ul><li>`location`<ul><li>New location of PineAP log.</ul></li></ul></li>
 ### ModuleManager
 #### Description
 The Module Manager is responsible for installing, removing, and upgrading modules. It's API can be used to manage modules, as well as fetching the list of installed modules and getting available modules. To use them in your module, your request body would look like this:
