@@ -98,7 +98,12 @@ Action|Description|Parameters
 ------|-----------|----------
 `getAvailableModules`|Return an array of modules available for download|_none_
 `getInstalledModules`|Return an array of modules currently installed|_none_
-`installModule`|Install a module|<ul><li>`moduleName`<ul><li>Name of module to install</li></ul></li></ul><ul><li>`destination`<ul><li>Destination of module.</li></ul>
+`downloadModule`|Download a specified module|<ul><li>`moduleName`<ul><li>Name of module to install</li></ul></li></ul><ul><li>`destination`<ul><li>Destination of module.</li></ul>
+`installModule`|Install a specified module|<ul><li>`moduleName`<ul><li>Name of module to install</li></ul></li></ul><ul><li>`destination`<ul><li>Destination of module.</li></ul>
+`removeModule`|Remove a specified module|<ul><li>`moduleName`<ul><li>Name of module to remove</ul></li></ul></li>
+`downloadStatus`|Check status of module download|_none_
+`installStatus`|Check status of module install|_none_
+`checkDestination`|Check if the specified destination has the specified space free|<ul><li>`name`<ul><li>Name of module</ul></li></ul></li><ul><li>`size`<ul><li>Size of module</ul></li></ul></li>
 ### Networking
 #### Description
 The Networking module API allows you to interface with the networking side of the WiFi Pineapple without having to write your own functions to manage interfaces, the DNS, and the routing table. As described above, you can use these actions in your own module like so:
