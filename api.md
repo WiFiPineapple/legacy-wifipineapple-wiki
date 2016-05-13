@@ -281,8 +281,9 @@ Action|Description|Parameters
 `getTrackingList`|Gets the current list of clients being tracked|_none_
 `addMac`|Adds a MAC to tracking|<ul><li>`mac`<ul><li>The MAC address to start tracking</li></ul></li>
 `removeMac`|Removes a MAC from tracking|<ul><li>`mac`<ul><li>The MAC address to stop tracking</li></ul></li>
+
 ## Community Python API
+A community python API wrapper exists [here](https://github.com/735tesla/python-pineapple) but documentation is still in progress.
 
 ## Further Information
-A community python API wrapper exists [here](https://github.com/735tesla/python-pineapple) but documentation is still in progress.
-<sub><sup>made with love <3</sup></sub>
+<small>made with <3</small>
