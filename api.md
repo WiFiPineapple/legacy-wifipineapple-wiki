@@ -84,6 +84,19 @@ Action|Description|Parameters
 #### Description
 ### ModuleManager
 #### Description
+The Module Manager is responsible for installing, removing, and upgrading modules. It's API can be used to manage modules, as well as fetching the list of installed modules and getting available modules. To use them in your module, your request body would look like this:
+```
+{
+    "module": "ModuleManager",
+    "action": "removeModule",
+    "moduleName": "Module"
+}
+```
+
+Action|Description|Parameters
+------|-----------|----------
+`getAvailableModules`|Return an array of modules available for download|_none_
+`getInstalledModules`|Return an array of modules currently installed|_none_
 ### Networking
 #### Description
 The Networking module API allows you to interface with the networking side of the WiFi Pineapple without having to write your own functions to manage interfaces, the DNS, and the routing table. As described above, you can use these actions in your own module like so:
