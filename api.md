@@ -178,8 +178,8 @@ Action|Description|Parameters
 ------|-----------|----------
 `getAvailableModules`|Return an array of modules available for download|_none_
 `getInstalledModules`|Return an array of modules currently installed|_none_
-`downloadModule`|Download a specified module|<ul><li>`moduleName`<ul><li>Name of module to install</li></ul></li></ul><ul><li>`destination`<ul><li>Destination of module.</li></ul>
-`installModule`|Install a specified module|<ul><li>`moduleName`<ul><li>Name of module to install</li></ul></li></ul><ul><li>`destination`<ul><li>Destination of module.</li></ul>
+`downloadModule`|Download a specified module|<ul><li>`moduleName`<ul><li>Name of module to install</li></ul></li></ul><ul><li>`destination`<ul><li>Destination of module.(`sdcard` or `internal`)</li></ul>
+`installModule`|Install a specified module|<ul><li>`moduleName`<ul><li>Name of module to install</li></ul></li></ul><ul><li>`destination`<ul><li>Destination of module.(`sdcard` or `internal`)</li></ul>
 `removeModule`|Remove a specified module|<ul><li>`moduleName`<ul><li>Name of module to remove</ul></li></ul></li>
 `downloadStatus`|Check status of module download|_none_
 `installStatus`|Check status of module install|_none_
