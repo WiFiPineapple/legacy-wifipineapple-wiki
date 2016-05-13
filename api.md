@@ -1,5 +1,4 @@
 # WiFi Pineapple Module API
-#TODO: Add available destinations for ModuleManager.
 
 ## Introduction
 Unlike the old web interface, the back end of the new interface has been decoupled from the front end. All requests to perform system actions are sent as POSTs to `/api/`. The content of the POST is JSON and contains a minimum of two parameters.
