@@ -75,8 +75,42 @@ Action|Description|Parameters
 `getCurrentVersion`|Returns the current firmware version on the pineapple|_none_
 ### Clients
 #### Description
+The Clients module allows for the monitoring and management of connected clients. For example, the following would kick the client with the MAC address `aa:bb:cc:dd:ee:ff`:
+```
+{
+  "module": "Clients",
+  "action": "kickClient",
+  "mac": "aa:bb:cc:dd:ee:ff"
+}
+```
+Action|Description|Parameters
+------|-----------|----------
+`getClientData`|Returns a JSON array of connected clients|_none_
+`kickClient`|Kicks (disconnects) a connected client from the pineapple|<ul><li>`mac`<ul><li>The MAC address of the client to be kicked</li></ul></li></ul>
+
 ### Configuration
 #### Description
+The configuration module allows for the modification of several pineapple configuration options such as timezone and landing page. The example below would set the landing page content to `<b><i>Pineapples are yummy</i></b>`:
+```
+{
+  "module": "Configuration",
+  "action": "saveLandingPage",
+  "landingPageData": "<b><i>Pineapples are yummy</i></b>"
+}
+```
+Action|Description|Parameters
+------|-----------|----------
+`getCurrentTimeZone`|Retrieves the current timezone of the pineapple|_none_
+`changeTimeZone`|Changes the pineapple's timezone|<ul><li>`timeZone`<ul><li>The timezone to switch to</li></ul></li></ul>
+`getLandingPageData`|Gets the current landing page data|_none_
+`saveLandingPage`|Changes the landing page content|<ul><li>`landingPageData`<ul><li>The text to which the landing page will be set</li></ul></li></ul>
+`changePassword`|Changes the password for the root user|<ul><li>`newPassword`<ul><li>The new password for the root user</li></ul></li><li>`newPasswordRepeat`<ul><li>For verification, must be the same as `newPassword`</li></ul></li><li>oldPassword<li><ul>The current password for root</ul></li></li></ul>
+`resetPineapple`|Resets the pineapple (executes `mtd erase rootfs_data`)|_none_
+`haltPineapple`|Halts the pineapple|_none_
+`rebootPineapple`|Reboots the pineapple|_none_
+`getLandingPageStatus`|Shows whether the landing page is enabled or not|_none_
+`enableLandingPage`|Enables the landing page|_none_
+`disableLandingPage`|Disables the landing page|_none_
 ### Dashboard
 #### Description
 You can use the Dashboards API to return useful values such as CPU usage, total SSIDs, SSIDs discovered this session and uptime. For example, the following will get the bulletins:
@@ -201,11 +235,54 @@ Action|Description|Parameters
 `downloadPineAPPool`|Get a download link to the SSID pool (useful for client side modules)|_none_
 ### Recon
 #### Description
+The recon module allows for the detection of access points and clients within range of the pineapple. The following example would scan for nearby access points:
+```
+{
+  "module": "Recon",
+  "action": "startScan",
+  "scanType": "apOnly"
+}
+```
+Action|Description|Parameters
+------|-----------|----------
+`startScan`|Starts a new scan|<ul><li>`scanType`<ul><li>The type of scan to perform (either `apOnly` or `clientAp`)</li></ul></li><li>`scanDuration`<ul><li>The duration to of time (in seconds) to scan for</li></ul></li></ul>
+`scanStatus`|Get the status or results of a scan|<ul><li>`scan`<ul><li>A JSON encoded scan object (e.g.`{"scanID": "1234567895", "scanType": "apOnly"}`)</li></ul></li></ul>
+
 ### Reporting
 #### Description
+The reporting module allows you to control the automatic reporting features of the pineapple. For example, the following would return report contents:
+```
+{
+  "module": "Reporting",
+  "action": "getReportContents"
+}
+```
+Action|Description|Parameters
+------|-----------|----------
+`getReportConfiguration`|Gets the current reporting configuration|_none_
+`getReportContents`|Gets the report contents|_none_
+`getEmailConfiguration`|Gets the current email configuration for reporting|_none_
+`setReportConfiguration`|Changes the report configuration|<ul><li>config<ul><li>A JSON object containing the new configuration (eg. `{"storeReport": true, "sendReport": true, "interval": 1, "generateReport": true}`)</li></ul></li></ul>
+`setReportContents`|Set which items get reported|<ul><li>config<ul><li>A JSON object containing the new configuration (eg. `{"pineAPLog": true, "clearLog": true, "siteSurvey": false, "siteSurveyDuration": 0, "client": false, "tracking": false}`)</li></ul></li></ul>
+`setEmailConfiguration`|Set the email configuration|
 ### Tracking
 #### Description
-
+Tracking allows you to create custom scripts for tracking clients. The following example would set a new tracking script:
+```
+{
+  "module": "Tracking",
+  "action": "saveScript",
+  "trackingScript": "#!/bin/bash\n\nMAC=$1\nTYPE=$2 # 0 PROBE; 1 ASSOCIATION\nSSID=$3\n"
+}
+```
+Action|Description|Parameters
+------|-----------|----------
+`getScript`|Gets the current tracking script contents|_none_
+`saveScript`|Sets the current tracking script contents|<ul><li>`trackingScript`<ul><li>The tracking script contents</li></ul></li>
+`getTrackingList`|Gets the current list of clients being tracked|_none_
+`addMac`|Adds a MAC to tracking|<ul><li>`mac`<ul><li>The MAC address to start tracking</li></ul></li>
+`removeMac`|Removes a MAC from tracking|<ul><li>`mac`<ul><li>The MAC address to stop tracking</li></ul></li>
 ## Community Python API
+
 
 ## Further Information
