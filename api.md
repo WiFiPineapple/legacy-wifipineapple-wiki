@@ -287,7 +287,14 @@ Every module must extend the `Module` class that resides in `Module.php`. Extend
 
 Function|Arguments|Description|Usage
 ----|----|----|----
-execBackground()|`command`|Will execute `command` in the background.|`$this->execBackground("ifconfig wlan1 down");`
+execBackground()|`command`|Will execute `command` in the background.|`$this->execBackground("ifconfig wlan1 down");
+installDependency()|`dependencyName`|Will use opkg to install `dependencyName`.|`$this->installDependecy('nmap');`
+checkDependency()|`dependencyName`|Will use opkg to check is `dependencyName` is installed.|`$this->checkDependency('nmap');`
+checkRunning()|`processName`|Will check to see if `processName` is currently running on the system.|`$this->checkRunning('nmap');`
+uciGet()|`uciString`|Will use UCI to get value of supplied `uciString`|`$this->uciGet("network.wan");`
+uciSet()|`settingString`<br>`value`|Will use UCI to set the supplied `value` of supplied `settingString`.|`$this->uciSet("network.wan.ifname", "wan2");`
+uciAddList()|`settingString`<br>`value`|Will use UCI to create a new list with supplied `settingString` and `value`.|`$this->uciAddList("network", "wan3");`
+
 
 ## Community Python API
 A community python API wrapper exists [here](https://github.com/735tesla/python-pineapple) but documentation is still in progress.
