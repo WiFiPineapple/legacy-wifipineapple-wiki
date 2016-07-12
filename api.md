@@ -285,9 +285,9 @@ Action|Description|Parameters
 ## Module.php API
 Every module must extend the `Module` class that resides in `Module.php`. Extending this class gives the module access to the following API functions. For more information, see [Creating Modules](https://wiki.wifipineapple.com/creating_modules.md).
 
-Test|Test|Test
+Function|Arguments|Description|Usage
 ----|----|----
-deez|nuts|lolxdmemes
+execBackground()|`command`|Will execute `command` in the background.|`$this->execBackground("ifconfig wlan1 down");`
 
 ## Community Python API
 A community python API wrapper exists [here](https://github.com/735tesla/python-pineapple) but documentation is still in progress.
