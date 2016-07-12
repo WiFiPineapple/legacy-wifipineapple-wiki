@@ -227,7 +227,7 @@ Action|Description|Parameters
 `removeSSID`|Removes an SSID from the pool|<ul><li>`ssid`<ul><li>The SSID string to remove</li></ul></li>
 `setPineAPSettings`|Update PineAP's settings|<ul> <li>`settings` <ul> <li>A dictionary with setting key/value pairs <ul> <li>`allowAssociations` <ul> <li>Whether clients should be allowed to associate to the pineapple</li> </ul> </li> <li>`logProbes` <ul> <li>Whether to log probe requests</li> </ul> </li> <li>`logAssociations` <ul> <li>Whether to log associations</li> </ul> </li> <li>`beaconResponses` <ul> <li>Whether to send beacon responses</li> </ul> </li> <li>`captureSSIDs` <ul> <li>Whether to add sniffed SSIDs to the pool</li> </ul> </li> <li>`broadcastSSIDs` <ul> <li>Whether to broadcast the SSID pool</li> </ul> </li> <li>`beaconInterval` <ul> <li>The beacon interval- must be one of "low", "normal" or "aggressive"</li> </ul> </li> <li>`responseInterval` <ul> <li>The response interval- must be one of "low", "normal" or "aggressive"</li> </ul> </li> <li>`targetMAC` <ul> <li>The MAC to target with responses</li> </ul> </li> <li>`sourceMAC` <ul> <li>The MAC PineAP should spoof</li> </ul> </li> </ul> </li> </ul> </li></ul>
 `getPineAPSettings`|Returns a dictionary with all the current PineAP settings|_none_
-`deauth`|Deauth a list of clients from a station. **_Use this with caution. The misuse of this function may be illegal in some places._**|<ul><li>`sta`<ul><li>The bssid of the station from which to disconnect the clients</li></ul></li><li>`clients`<ul><li>An array of client MACs to deauth</li></ul></li><li>`multiplier`<ul><li>The number of deauths (from 1 to 10) to send</li></ul></li><li>`channel`<ul><li>The channel to hop to before sending the frame(s)</li></ul></ul></li></ul>
+`deauth`|Deauth a list of clients from a station. **_Use this with caution. The misuse of this function may be illegal in some places._***|<ul><li>`sta`<ul><li>The bssid of the station from which to disconnect the clients</li></ul></li><li>`clients`<ul><li>An array of client MACs to deauth</li></ul></li><li>`multiplier`<ul><li>The number of deauths (from 1 to 10) to send</li></ul></li><li>`channel`<ul><li>The channel to hop to before sending the frame(s)</li></ul></ul></li></ul>
 `enable`|Enables PineAP|_none_
 `disable`|Disables PineAP|_none_
 `saveAsDefault`|Makes the current configuration persist after reboots|_none_
@@ -281,6 +281,13 @@ Action|Description|Parameters
 `getTrackingList`|Gets the current list of clients being tracked|_none_
 `addMac`|Adds a MAC to tracking|<ul><li>`mac`<ul><li>The MAC address to start tracking</li></ul></li>
 `removeMac`|Removes a MAC from tracking|<ul><li>`mac`<ul><li>The MAC address to stop tracking</li></ul></li>
+
+## Module.php API
+Every module must extend the `Module` class that resides in `Module.php`. Extending this class gives the module access to the following API functions.
+
+Test|Test|Test
+----|----|----
+deez|nuts|lolxdmemes
 
 ## Community Python API
 A community python API wrapper exists [here](https://github.com/735tesla/python-pineapple) but documentation is still in progress.
