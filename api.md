@@ -283,7 +283,7 @@ Action|Description|Parameters
 `removeMac`|Removes a MAC from tracking|<ul><li>`mac`<ul><li>The MAC address to stop tracking</li></ul></li>
 
 ## Module.php API
-Every module must extend the `Module` class that resides in `Module.php`. Extending this class gives the module access to the following API functions.
+Every module must extend the `Module` class that resides in `Module.php`. Extending this class gives the module access to the following API functions. For more information, see [Creating Modules](https://wiki.wifipineapple.com/creating_modules.md).
 
 Test|Test|Test
 ----|----|----
