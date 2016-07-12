@@ -286,7 +286,7 @@ Action|Description|Parameters
 Every module must extend the `Module` class that resides in `Module.php`. Extending this class gives the module access to the following API functions. For more information, see [Creating Modules](https://wiki.wifipineapple.com/creating_modules.md).
 
 Function|Arguments|Description|Usage
-----|----|----
+----|----|----|----
 execBackground()|`command`|Will execute `command` in the background.|`$this->execBackground("ifconfig wlan1 down");`
 
 ## Community Python API
