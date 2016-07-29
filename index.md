@@ -39,3 +39,21 @@ Keeping tabs on client devices of interest is also within the realms of PineAP t
 Finally, complementing the PineAP suite is a multitude of community developed modules. Available as free over the air downloads, these modules provide enhancements and additional features to the WiFi Pineapple.
 
 In conclusion, using PineAP on the WiFi Pineapple, the penetration tester is able to immediately identify, audit and analyze vulnerabilities within the wireless landscape.
+
+## Contributing to the Wiki
+
+### Thank You
+The WiFi Pineapple Wiki is brought to you by the WiFi Pineapple Team, and many other community members. As a community driven resource, the people who use and edit the wiki would be very grateful if you followed the guidelines below. This page also has tips and tricks for making your article, which would also be fabulous.
+
+All changes to the wiki can be contributed on [GitHub](https://github.com/hak5/wifipineapple-wiki)
+
+Thanks,
+WiFi Pineapple Team
+
+
+### Markdown
+Markdown Basics: https://help.github.com/articles/markdown-basics/
+
+Markdown Syntax: http://daringfireball.net/projects/markdown/syntax
+
+Table Generator: http://www.tablesgenerator.com/markdown_tables
