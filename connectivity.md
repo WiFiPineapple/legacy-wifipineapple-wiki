@@ -49,15 +49,15 @@ By default the WiFi Pineapple is expecting an Internet connection from 172.16.42
 
 Once connected, the network connection of the host Linux PC may be forwarded to the WiFi Pineapple using iptables. A free script is available to aid in iptables configuration for most Linux hosts. To download the script from the terminal, run:  
 
-> wget www.wifipineapple.com/wp6.sh. 
+> wget www.wifipineapple.com/wp6.sh
 
 Next the script must be made executable, typically by running:  
 
-> chmod +x wp6.sh. 
+> chmod +x wp6.sh
 
 Finally execute the script by running: 
 
-> ./wp6.sh.
+> ./wp6.sh
 
 The WiFi Pineapple Connector script for Linux offers either guided or manual setup modes. For most the guided setup is advised. Press G then follow the onscreen prompts to save the connection settings. Once saved, press C to connect.
 
