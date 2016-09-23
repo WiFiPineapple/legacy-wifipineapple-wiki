@@ -38,6 +38,30 @@ We advise connecting the WiFi Pineapple NANO to a stable USB power supply capabl
 3. Browse to http://172.16.42.1:1471
 4. Follow the onscreen instructions to complete setup
 
+### MacOS
+
+1. Download the latest WiFi Pineapple NANO firmware  
+    [https://www.wifipineapple.com/downloads](https://www.wifipineapple.com/downloads)
+2. Plug the NANO into your computer using the included USB Y cable
+3. Open System Preferences -> Sharing and enable Internet Sharing
+4. Once the blue LED on top of the NANO has stopped flashing, open Network Settings and connect to the new Wifi access point that is created by the NANO.  The naming convention is *Pineapple_NNNN*, where NNNN is from the MAC address printed on the bottom of the device.
+5. Browse to [http://172.16.42.1:1471/](http://172.16.42.1:1471/)
+6. Follow the onscreen instructions to complete setup
+7. Once your initial setup is complete, reconnect to the NANO's access point.
+8. Open a new Terminal window and connect to the NANO via SSH  
+    `ssh root@172.16.42.1`
+9. Configure the IP address  
+    `uci set network.lan.ipaddr='192.168.2.10'`
+10. Configure the Gateway  
+    `uci set network.lan.gateway='192.168.2.1'`
+12. Save the configuration and reboot  
+    `uci commit && reboot`
+
+You should now be able to access the Wifi Pineapple NANO GUI without connecting to its own access point by navigating to [http://192.168.2.10:1471/](http://192.168.2.10:1471/)
+
+If you receive an error when attemtping to connect to the NANO over SSH (step 8) you may need to remove the existing SSH key from your *known_hosts* file which can be done with this command  
+    `ssh-keygen -R 172.16.42.1`
+
 ## WiFi Pineapple TETRA
 
 We advise connecting the WiFi Pineapple TETRA to a stable power supply capable of providing 18W for initial setup. When connecting to a PC, use the included USB Y cable. This setup process will require approximately 5 minutes. Video tutorials for setup can be found from https://www.wifipineapple.com/pages/setup
