@@ -1,4 +1,4 @@
-# Old hardware
+# Old Hardware
 
 ## Wifi Pineapple Mark I
 Also known as the Jasager
@@ -10,8 +10,8 @@ Also known as the Jasager
 | CPU | AR2315A SoC @ 180 MHz(?) |
 | RAM | 16 MB |
 | Flash | 8 MB |
-| Ethernet | LAN@ 10/100 MBit |
-| Wifi | AR9331 Soc with 802.11 bg |
+| Ethernet | LAN @ 10/100 MBit |
+| Wifi | AR2315A Soc with 802.11 bg |
 | Antenna Type | Extern: RP-SMA |
 | Power | Barrel Jack 12V 1A |
 | Serial |yes |
@@ -33,8 +33,8 @@ Also known as the Jasager Version 2
 | CPU | AR2315A SoC @ 180 MHz(?)|
 | RAM | 32 MB |
 | Flash | 8 MB |
-| Ethernet | LAN@ 10/100 MBit |
-| Wifi | AR9331 Soc with 802.11 bg |
+| Ethernet | LAN @ 10/100 MBit |
+| Wifi | AR2315A Soc with 802.11 bg |
 | Antenna Type | Extern: RP-SMA |
 | Power | Barrel Jack 12V 1A |
 | Serial | yes |
