@@ -30,15 +30,13 @@ We advise connecting the WiFi Pineapple NANO to a stable USB power supply capabl
 7. When prompted, tap Begin Setup to launch the NANO setup page.
 8. Follow the onscreen instructions to complete setup
 
-### Windows / Linux / MacOS
+### Windows / Linux
 
 1. Download the latest WiFi Pineapple NANO firmware
     https://www.wifipineapple.com/downloads
 2. Plug the NANO into your computer using the included USB Y cable
 3. Browse to http://172.16.42.1:1471
 4. Follow the onscreen instructions to complete setup
-
-See [Connectivity](connectivity.md) for further setup of Internet Connection Sharing (ICS).
 
 ## WiFi Pineapple TETRA
 
