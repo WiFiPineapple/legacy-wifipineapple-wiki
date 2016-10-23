@@ -23,9 +23,9 @@ The **WiFi Pineapple NANO** may be enhanced with wired Ethernet functionality by
 
 ## Internet Connection Sharing
 
-One of the most popular deployment scenarios is to configure the WiFi Pineapple to share an Internet connection from a personal computer, such as a notebook running Windows or Linux. With the WiFi Pineapple providing its WiFi clients Internet access from the host PC, the penetration tester may then extend MITM functions through desktop applications such as packet analyzers and auditing frameworks.
+One of the most popular deployment scenarios is to configure the WiFi Pineapple to share an Internet connection from a personal computer, such as a notebook running Windows or Linux. With the WiFi Pineapple providing its WiFi clients Internet access from the host PC, the penetration tester may then extend MITM functions through desktop applications such as packet analyzers and auditing frameworks. 
 
-### Ethernet with Windows
+## Ethernet with Windows
 
 By default the WiFi Pineapple is expecting an Internet connection from 172.16.42.42 on its LAN. Connect the WiFi Pineapple LAN port to the Windows PC host. On the NANO this is the male USB A plug. On the TETRA this is the USB ETH port.
 
@@ -43,7 +43,7 @@ Note: For convenience the network interface may be renamed by highlighting it an
 * Click OK
 * Click Close
 
-### Ethernet with Linux
+## Ethernet with Linux
 
 By default the WiFi Pineapple is expecting an Internet connection from 172.16.42.42 on its LAN. Connect the WiFi Pineapple LAN port to the Linux PC host. On the NANO this is the male USB A plug. On the TETRA this is the USB ETH port.
 
@@ -62,26 +62,6 @@ Finally execute the script by running:
 The WiFi Pineapple Connector script for Linux offers either guided or manual setup modes. For most the guided setup is advised. Press G then follow the onscreen prompts to save the connection settings. Once saved, press C to connect.
 
 The WiFi Pineapple Connector script for Linux is provided free of charge for convenience, without warranty, and is not necessary for successful operation of the WiFi Pineapple.
-
-### Internet Conection Sharing on MacOS
-1. Open System Preferences -> Sharing and enable Internet Sharing
-2. Once the blue LED on top of the NANO has stopped flashing, open Network Settings and connect to the new Wifi access point that is created by the NANO.  The naming convention is *Pineapple_NNNN*, where NNNN is from the MAC address printed on the bottom of the device.
-3. Browse to [http://172.16.42.1:1471/](http://172.16.42.1:1471/)
-4. Follow the onscreen instructions to complete setup
-5. Once your initial setup is complete, reconnect to the NANO's access point.
-6. Open a new Terminal window and connect to the NANO via SSH  
-    `ssh root@172.16.42.1`
-7. Configure the IP address  
-    `uci set network.lan.ipaddr='192.168.2.10'`
-8. Configure the Gateway  
-    `uci set network.lan.gateway='192.168.2.1'`
-9. Save the configuration and reboot  
-    `uci commit && reboot`
-
-You should now be able to access the Wifi Pineapple NANO GUI without connecting to its own access point by navigating to [http://192.168.2.10:1471/](http://192.168.2.10:1471/)
-
-If you receive an error when attemtping to connect to the NANO over SSH (step 8) you may need to remove the existing SSH key from your *known_hosts* file which can be done with this command  
-    `ssh-keygen -R 172.16.42.1`
 
 ## USB Tethering (Android)
 
