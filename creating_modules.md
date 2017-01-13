@@ -84,7 +84,7 @@ Here we register the name of the controller, `"ExampleController"`. Then we incl
 Now we will add a variable inside our scope called `hello`, like so:
 ```
 registerController("ExampleController", ['$api', '$scope', function($api, $scope) {
-    $scope.text = "Hello World!";
+    $scope.hello = "Hello World!";
 }])
 ```
 
@@ -97,11 +97,11 @@ registerController("ExampleController", ['$api', '$scope', function($api, $scope
         module: 'ExampleModule',
         action: 'getHello'
     }, function(response) {
-        $scope.text = response.text;
+        $scope.hello = response.text;
     });
 }])
 ```
-This will send a request to our module.php, and take its response and set `$scope.text` to `response.text`.
+This will send a request to our module.php, and take its response and set `$scope.hello` to `response.text`.
 
 #### module.php
 The module.php contains all PHP code and can directly interface with other modules, talk to the Javascript and access the WiFi Pineapple API. In this guide, we will finish our Example Module by making it reply to our AngularJS request and return a string containing "Hello World!".
