@@ -1,6 +1,6 @@
 # WiFi Pineapple Wiki
 
-[Home](/)
+[Home](https://wiki.wifipineapple.com)
 
 [Legacy Home](index.md)
 
