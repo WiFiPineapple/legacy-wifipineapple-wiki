@@ -19,6 +19,6 @@
 
 [Troubleshooting](troubleshooting.md)
 
-[Legacy](/legacy/)
+[Legacy](legacy/)
 
 [Forums](https://forums.hak5.org/index.php?/forum/64-wifi-pineapple-jasager/)
