@@ -16,6 +16,10 @@ Many actions do not require additional parameters. For instance, `{"system": "no
 }
 ```
 
+## XSS prefix on API output
+
+Responses from the API will contain a well known prefix to help mitigate against XSS attacks. Clients will need to strip this prefix before parsing the JSON. You can read more on the [Angular Guide](https://angular.io/guide/security), as well as the [Google Blog](https://security.googleblog.com/2011/05/website-security-for-webmasters.html)
+
 ## Authentication
 _(Please note that extra authentication parameters are not required when using the angular module api due to the fact that client side module components are loaded after the user authenticates their browser)_
 
