@@ -1,3 +1,6 @@
+# Deprecation of the WiFi Pineapple Wiki
+The WiFi Pineapple Wiki has been deprecated. You are encouraged to use the [Official Hak5 Docs](https://docs.hak5.org) instead.
+
 # Welcome
 
 The WiFi Pineapple is more than hardware or software -- it's home to a helpful community of creative penetration testers and IT professionals. Welcome!
